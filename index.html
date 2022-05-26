@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blessed</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./IMG/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
 
@@ -21,7 +22,7 @@
 
             <nav class="navegacion">
 
-                <h1 class="logo__header">Blessed</h1>
+                <h1 class="logo__header" data-aos="fade-right">Blessed</h1>
                 <div class="menuNavegacion">
                     <ul class="menu">
                         <li class="barra__navegacion"><a class="enlace" href="./pages/newIn.html">NEW IN</a></li>
@@ -48,32 +49,62 @@
 
             <img class="imagen__index" src="./IMG/principal" alt="">
 
+            <section class="row">
+                <h2 class="titulo__coleccion">COLECCION AMAZONIA</h2>
 
-            <section>
-                <h2 class="coleccion">COLECCION AMAZONA</h2>
-                <article class="imagenes__articulo">
-                    <img class="imagenes" src="./IMG/1.jpg" alt="">
-                    <img class="imagenes" src="./IMG/3.jpg" alt="">
-                    <img class="imagenes" src="./IMG/2" alt="">
-                </article>
+                <div class="card estilo">
+                    <a class="estiloCard" href="#">
+                        <div class="imgContainer">
+                            <img src="../IMG/5.jpg" alt="producto1">
+                            <h3 class="titulo__producto">CROCODILE DIAMOND CHOKER</h3>
+                            <article  class="descripcion__producto">
+                            <p class="descripcion__producto">Montado en oro blanco y rosado de 18k con 567 diamantes blancos</p>
+                            <strong class="precio">$57.000</strong>
+                        </article>
+                    </a>
+
+                </div>
+                </div>
+                </div>
+
+                <div class="card estilo">
+                    <a class="estiloCard" href="#">
+                        <div class="imgContainer">
+                            <img src="../IMG/8.webp" alt="producto1">
+                            <h3 class="titulo__producto">SPIKE DIAMOND HOOPS</h3>
+                            <article class="descripcion__producto">
+                            <p>Montado en oro blanco de 18K con 820 diamantes blancos</p>
+                            <strong class="precio">$120.000</strong>
+                        </article>
+                    </a>
+                </div>
+                </div>
+                </div>
+
+                <div class="card estilo">
+                    <a class="estiloCard" href="#">
+                        <div class="imgContainer">
+                            <img src="../IMG/3.jpg" alt="producto1">
+                            <h3 class="titulo__producto">NECKLACE IN ROSE GOLD</h3>
+                            <article  class="descripcion__producto">
+                            <p >Necklace montado en oro rosa de 18K con 60 diamantes blancos</p>
+                            <strong class="precio">$95.000</strong>
+                        </article>
+                    </a>
+                </div>
+                </div>
+                </div>
+
 
             </section>
+            
+            <section class="articuloCaja">
 
-            <section>
-                <article class="imagenes__articulo">
-                    <p class="articulos__caja">CADENA WHITE DIAMOND</p>
-                    <p class="articulos__caja">CADENA ROSE GOLD</p>
-                    <p class="articulos__caja">ANILLO DIAMOND</p>
-                </article>
-
-                <article class="imagenes__articulo">
-
-                    <a class="articulo--caja" href="./pages/productos.html">SHOP NOW!</a>
-                </article>
-            </section>
+           <a class="articulo--caja" href="./pages/productos.html" data-aos="zoom-in-down">SHOP NOW!</a>
+           </section>
 
 
-            <section class="artesanos">
+            <section class="artesanos" data-aos="zoom-out-left">
                 <h2 class="titulo__artesania">ARTESANOS EXPERTOS</h2>
                 <p class="artesania__parrafo">El engaste de piedras preciosas excepcionales requiere el máximo cuidado,
                     experiencia y precisión. Los artesanos suelen ser joyeros pasando su profesión de
@@ -105,6 +136,10 @@
 
 
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>

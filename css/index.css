@@ -117,42 +117,54 @@ body {
 
 
 /* MAIN*/
+.row .titulo__coleccion{
+        width: 100%;   
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+        margin-top: 50px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 35px;
 
-.coleccion {
+}
+
+.titulo__producto{
     display: flex;
     justify-content: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 30px;
-    margin: 40px;
+    align-items: center;
+    color: rgb(34, 30, 25);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.imagenes__articulo {
+.descripcion__producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(53, 53, 53);
+}
+
+.precio{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.estilo .titulo__producto:hover {
+    color: rgba(66, 66, 66, 0.514);
+
+}
+.articuloCaja {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
-
-
-.imagenes {
-    width: 32%;
-}
-
-.articulos__caja {
-    display: inline;
-    padding: 20px;
-    margin: 15px;
-    border: 0.5px solid rgba(0, 0, 0, 0.575);
-    color: rgb(0, 0, 0);
-    font-family: 'Fira Sans', sans-serif;
-}
-
-
 .articulo--caja {
     display: inline;
-    padding: 15px;
+    padding: 30px;
     border: 1px solid rgba(0, 0, 0, 0.575);
     color: rgb(0, 0, 0);
+    font-size: 30px;
     font-family: 'Fira Sans', sans-serif;
     margin: 80px;
     text-decoration: none;
@@ -270,32 +282,6 @@ body {
 
 /*PRODUCTOS*/
 
-.catalogo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    padding: 25px;
-    gap: 25px;
-
-
-}
-
-.productos__catalogo {
-    width: 100%;
-    margin-bottom: 100px;
-}
-
-
-.boxCatalogo:hover .catalogo img {
-    width: 100%;
-    transition: all 25sg;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
-}
-
-.catalogo img:hover {
-    transform: scale(1.02)
-}
-
 .joyas {
     display: flex;
     flex-direction: row;
@@ -312,15 +298,27 @@ body {
     justify-content: center;
 }
 
+.joyas:hover{
+    color: rgba(72, 136, 136, 0.699);
+}
+
 .joyas--bordes {
     display: inline-flex;
     flex-direction: row;
     border-bottom: 1px solid black;
     padding: 10px;
     color: black;
-    margin: 20px;
+    margin: 50px;
     font-family: "Ubuntu", sans-serif;
     font-style: initial;
+}
+
+.productosCatalogo{
+    padding: 5px;
+    border-bottom: 1px solid rgba(66, 44, 44, 0.342);
+    border-left: 1px solid  rgba(66, 44, 44, 0.212);
+    border-right:1px solid  rgba(66, 44, 44, 0.212);
+    
 }
 
 /*FIN DE PRODUCTOS*/
@@ -350,7 +348,8 @@ body {
 
 .card {
     width: 30%;
-    margin-bottom: 100px;
+    margin-bottom: 300px;
+
 }
 
 .estilo {
@@ -366,7 +365,7 @@ body {
 }
 
 .estilo .estiloCard:hover {
-    text-decoration: underline;
+    color: rgba(66, 66, 66, 0.514);
 
 }
 
