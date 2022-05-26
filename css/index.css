@@ -1,0 +1,904 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Koulen&family=Merriweather:ital@1&family=Raleway:wght@300&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+}
+
+/*IMAGEN INDEX*/
+.imagen__index {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+}
+
+/*FIN IMAGEN INDEX*/
+
+
+
+
+/*LOGO*/
+
+.logo__header {
+    font-size: 100px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, 0.932);
+}
+
+/*FIN LOGO*/
+
+
+
+
+/*HEADER*/
+
+.navegacion .logo__cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 300px;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    background: rgb(255, 255, 255);
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu>li {
+    display: inline-block;
+}
+
+.menu>.barra__navegacion>.enlace {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(0, 0, 0);
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+}
+
+.menu .barra__navegacion .enlace:hover {
+    color: rgb(0, 108, 248);
+}
+
+/*SUBMENU*/
+
+
+.submenu__desplegable {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.301);
+    width: 150px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu__desplegable .barra__submenu .enlace__submenu {
+    display: block;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu__desplegable {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menuNavegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*FIN DE BARRA DE NAVEGACION*/
+
+
+
+/* MAIN*/
+
+.coleccion {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    margin: 40px;
+}
+
+.imagenes__articulo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.imagenes {
+    width: 32%;
+}
+
+.articulos__caja {
+    display: inline;
+    padding: 20px;
+    margin: 15px;
+    border: 0.5px solid rgba(0, 0, 0, 0.575);
+    color: rgb(0, 0, 0);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+.articulo--caja {
+    display: inline;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.575);
+    color: rgb(0, 0, 0);
+    font-family: 'Fira Sans', sans-serif;
+    margin: 80px;
+    text-decoration: none;
+}
+
+.articulo--caja:hover {
+    color: rgba(0, 150, 250, 0.712);
+}
+
+.artesanos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3 150px);
+    gap: 10px;
+    margin: 19px;
+}
+
+.titulo__artesania {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 35px;
+
+    font-family: "Raleway", sans-serif;
+
+
+}
+
+.artesania__parrafo {
+    grid-column: 1;
+    grid-row: 3;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+
+}
+
+.imagen__artesanos {
+    grid-column: 2;
+    grid-row: 1/5;
+    width: 600px;
+
+
+}
+
+/*FIN DE MAIN*/
+
+
+
+
+/*INICIO DE SESION / REGISTRARSE*/
+
+.formularioIngreso {
+    margin: auto;
+    width: 50%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.74);
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+
+.textoFormulario {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.767);
+    font-family: 'Koulen', cursive;
+    letter-spacing: 2px;
+
+}
+
+.input__formulario {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 20px;
+    border: 1px solid rgba(94, 71, 71, 0.562);
+}
+
+.label__formulario {
+    display: block;
+    padding: 5px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+
+}
+
+.input__formulario[type="submit"] {
+    background: rgb(0, 0, 0);
+    border: 0.2px solid black;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.input__formulario[type="submit"]:hover {
+    opacity: 1;
+}
+
+.input__formulario[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+/*FIN DE SESION / REGISTRARSE*/
+
+
+
+
+
+/*PRODUCTOS*/
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 25px;
+    gap: 25px;
+
+
+}
+
+.productos__catalogo {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+
+.boxCatalogo:hover .catalogo img {
+    width: 100%;
+    transition: all 25sg;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+}
+
+.catalogo img:hover {
+    transform: scale(1.02)
+}
+
+.joyas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway', sans-serif;
+}
+
+.joyas__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.joyas--bordes {
+    display: inline-flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    color: black;
+    margin: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: initial;
+}
+
+/*FIN DE PRODUCTOS*/
+
+
+
+
+
+/*NEW IN*/
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+.row .newIn {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 30%;
+    margin-bottom: 100px;
+}
+
+.estilo {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.estiloCard {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+
+}
+
+.estilo .estiloCard:hover {
+    text-decoration: underline;
+
+}
+
+.imgContainer {
+    height: 400px;
+    position: relative;
+
+}
+
+.estilo .imgContainer img {
+    width: 100%;
+    transition: all 25sg;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+
+
+}
+
+.estilo:hover .imgContainer img {
+    transform: scale(1.02)
+}
+
+
+/*FIN NEW IN*/
+
+
+
+
+
+/*REDES SOCIALES*/
+
+.redesSociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.texto__principal {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    margin: 10px;
+}
+
+.redesSociales__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+.redesSociales--logo {
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.redesSociales--logo1 {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.redesSociales__texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.redesSociales--texto {
+    display: inline-block;
+    margin: 12px;
+
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/*FIN REDES SOCIALES*/
+
+
+
+
+
+/*CONTACTO*/
+
+.contacto {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.842);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.texto__contacto {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.formulario {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    background: rgba(0, 0, 0, 0.911);
+    color: white;
+    padding: 15px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+.contacto__whatsapp {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+
+.contacto__email {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+.sucursales {
+    display: inline-block;
+    margin: 11px;
+    color: rgb(0, 0, 0);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.sucursales__ubicacion--bordes {
+    display: inline-block;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin: 100px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: initial;
+}
+
+.ubicacion__mapa {
+    width: 100%;
+    height: 400px;
+}
+
+/*FIN UBICACION*/
+
+
+
+
+
+/*FOOTER*/
+
+.footer__preguntas {
+    display: flex;
+    flex-direction: column;
+    font-family: "Ubuntu", sans-serif;
+    margin: 50px;
+
+}
+
+.footer__faqs {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.caja {
+    display: flex;
+    flex-direction: row;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.footer__caja {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    width: 100%;
+}
+
+/*FIN FOOTER*/
+
+
+
+
+/*HEADER/
+/*barra navegacion*/
+
+@media screen and (max-width:652px) {
+    .navegacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 100px);
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .menuNavegacion {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 25px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.562);
+        margin-top: 30px;
+
+    }
+
+    .logoHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo__cabecera {
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width:790px) {
+    .navegacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 100px);
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .menuNavegacion {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 25px;
+        border-bottom: 1px solid black;
+        margin-top: 30px;
+
+    }
+
+    .logo__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.884);
+    }
+
+    .logo__cabecera {
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+}
+
+/*fin header*/
+
+/*MAIN*/
+
+@media screen and (max-width:652px) {
+    .imagen__index {
+        width: 100%;
+        object-fit: contain;
+        margin-bottom: 20px;
+
+    }
+}
+
+/*FIN MAIN*/
+
+/*seccion informativa sobre Artesanos*/
+
+@media screen and (max-width:652px) {
+    .artesanos {
+        display: grid;
+        grid-template-columns: 1fr, 2rf, 1fr;
+        grid-template-rows: 1fr repeat(2, 150px);
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .titulo__artesania {
+        grid-column: 1/2;
+        grid-row: 1;
+        font-size: 35px;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .artesania__parrafo {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        font-size: 20px;
+        font-family: "Raleway", sans-serif;
+    }
+
+    .imagen__artesanos {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+}
+
+/*fin seccion artesanos*/
+
+
+
+/*PRODUCTOS*/
+
+
+@media screen and (max-width:652px) {
+    .catalogo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 30px;
+
+    }
+
+}
+
+/*FIN PRODUCTOS*/
+
+
+
+
+/* NEW IN*/
+
+@media screen and (max-width:480px) {
+    .card {
+        width: 40.33%;
+    }
+
+    .estiloCard {
+        font-size: 29px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+
+    }
+
+}
+
+@media screen and (max-width:790px) {
+    .card {
+        width: 40.33%;
+        margin-bottom: 20px;
+    }
+
+    .estiloCard {
+        font-size: 24px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+
+    }
+
+}
+
+
+@media screen and (max-width:1075px) {
+    .card {
+        width: 40.33%;
+        margin-top: 10px;
+    }
+}
+
+/*FIN NEW IN*/
+
+
+/*REGISTRO E INICIO DE SESION*/
+
+@media screen and (max-width:790px) {
+    .formularioIngreso {
+        margin: auto;
+        width: 50%;
+        max-width: 500px;
+        background: rgba(245, 92, 224, 0.295);
+        padding: 30px;
+        border: 1px solid rgba(245, 92, 224, 0.295);
+
+    }
+
+
+    @media screen and(max-whidth:652px) {
+        .formularioIngreso {
+            width: 75%;
+        }
+
+    }
+}
+
+/*FIN FORMULARIO INICIO DE SESION*/
+
+
+
+/*UBICACION*/
+
+@media screen and (max-width:790px) {
+    .sucursales {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 35px;
+        margin-bottom: 40px;
+        font-family: 'Fira Sans', sans-serif;
+    }
+
+    .sucursales__ubicacion--bordes {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border: 0.5px solid black;
+        letter-spacing: 2px;
+        font-size: 18px;
+        font-family: 'Fira Sans', sans-serif;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .sucursales {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 40px;
+    }
+
+    .sucursales__ubicacion--bordes {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border: 0.5px solid black;
+        letter-spacing: 2px;
+
+
+    }
+}
+
+
+/*REDES SOCIALES*/
+
+@media screen and (max-width:780px) {
+    .redesSociales--texto {
+        font-family: "Ubuntu", sans-serif;
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        background: rgba(0, 0, 0, 0.897);
+
+    }
+
+}
+
+
+/*FIN REDES SOCIALES*/
+
+
+
+
+/*footer*/
+
+@media screen and (max-width:652px) {
+    .footer__preguntas {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-family: "Ubuntu", sans-serif;
+
+    }
+}
+
+@media screen and (max-width:652px) {
+    .footer__caja {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.096);
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+        width: 100%;
+
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .footer__caja {
+        color: black;
+        padding: 10px;
+        background: white;
+        font-size: 15px;
+        border: 1px solid black;
+
+    }
+}
+
+/*fin footer*/
