@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="./IMG/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/index.css">
 
 
@@ -18,135 +19,164 @@
 
 <body>
 
+
+
     <header>
 
-        <header>
+        <section class="row">
+            <nav class="navbar navbar-expand-lg">
 
-            <nav class="navegacion">
+                <div class="container-fluid">
+                    <section class="d-flex flex-grow-1">
+                        <span class="w-100 d-lg-none d-block"></span>
+                        <a href="#" class="navbar-brand">Blessed</a>
+                        <div class="w-100 text-right">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#myNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
 
-                <h1 class="logo__header" data-aos="fade-right">Blessed</h1>
-                <div class="menuNavegacion">
-                    <ul class="menu">
-                        <li class="barra__navegacion"><a class="enlace" href="./pages/newIn.html">NEW IN</a></li>
-                        <li class="barra__navegacion"><a class="enlace" href="./pages/productos.html">PRODUCTOS</a>
-                            <ul class="submenu__desplegable">
-                                <li class="barra__submenu"><a class="enlace__submenu" href="Pendientes">Pendientes</a>
-                                </li>
-                                <li class="barra__submenu"><a class="enlace__submenu" href="Pulseras">Pulseras</a></li>
-                                <li class="barra__submenu"><a class="enlace__submenu" href="Cadenas">Colgantes</a></li>
-                                <li class="barra__submenu"><a class="enlace__submenu" href="Anillos">Anillos</a></li>
-                            </ul>
-                        </li>
-                        <li class="barra__navegacion"><a class="enlace" href="./index.html">INICIO</a></li>
-                        <li class="barra__navegacion"><a class="enlace" href="./pages/ingreso.html">INGRESÁ</a></li>
-                        <li class="barra__navegacion"><a class="enlace" href="./pages/registro.html">REGISTRATE</a></li>
-                    </ul>
-                    </ul>
+                    </section>
+                    <section class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                        <ul class="navbar-nav ms-auto flex-nowrap">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link active">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./pages/newIn.html" class="nav-link">NEW IN</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./pages/productos.html" id="submenu"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false"> PRODUCTOS </a>
+                                <ul class="dropdown-menu" aria-labelledby="submenu">
+                                    <li><a class="dropdown-item" href="./pages/productos.html">VER PRODUCTOS</a></li>
+                                    <li><a class="dropdown-item" href="#">Cadenas</a></li>
+                                    <li><a class="dropdown-item" href="#">Pendientes</a></li>
+                                    <li><a class="dropdown-item" href="#">Pulseras</a></li>
+                                    <li><a class="dropdown-item" href="#">Anillos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-secondary m-2"><a class="botones_barraNavegacion"
+                                href="./pages/ingreso.html">Login</a>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary"><a class="botones_barraNavegacion"
+                                href="./pages/registro.html">Sign up</a></button>
+
+
+                    </section>
                 </div>
             </nav>
-        </header>
-
-        <main>
 
 
-            <img class="imagen__index" src="./IMG/principal" alt="">
-
-            <section class="row">
-                <h2 class="titulo__coleccion">COLECCION AMAZONIA</h2>
-
-                <div class="card estilo">
-                    <a class="estiloCard" href="#">
-                        <div class="imgContainer">
-                            <img src="./IMG/5.jpg" alt="producto1">
-                            <h3 class="titulo__producto">CROCODILE DIAMOND CHOKER</h3>
-                            <article class="descripcion__producto">
-                                <p class="descripcion__producto">Montado en oro blanco y rosado de 18k con 567 diamantes
-                                    blancos</p>
-                                <strong class="precio">$150.000</strong>
-                            </article>
-                    </a>
-
-                </div>
-                </div>
-                </div>
-
-                <div class="card estilo">
-                    <a class="estiloCard" href="#">
-                        <div class="imgContainer">
-                            <img src="./IMG/8.webp" alt="producto1">
-                            <h3 class="titulo__producto">SPIKE DIAMOND HOOPS</h3>
-                            <article class="descripcion__producto">
-                                <p>Montado en oro blanco de 18K con 820 diamantes blancos</p>
-                                <strong class="precio">$120.000</strong>
-                            </article>
-                    </a>
-                </div>
-                </div>
-                </div>
-
-                <div class="card estilo">
-                    <a class="estiloCard" href="#">
-                        <div class="imgContainer">
-                            <img src="./IMG/3.jpg" alt="producto1">
-                            <h3 class="titulo__producto">NECKLACE IN ROSE GOLD</h3>
-                            <article class="descripcion__producto">
-                                <p>Necklace montado en oro rosa de 18K con 60 diamantes blancos</p>
-                                <strong class="precio">$95.000</strong>
-                            </article>
-                    </a>
-                </div>
-                </div>
-                </div>
+        </section>
 
 
+    </header>
+
+    <main class="container">
+
+        <img src="./IMG/principal " class="img-fluid" alt="...">
+
+        <section class="titulo__coleccion">
+            <h1>COLECCION AMAZONIA</h1>
+        </section>
+
+
+        <section class="cardIndex">
+
+            <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
+
+                <section class="col">
+                    <article class="card w-100 shadow-lg">
+                        <img src="./IMG/7.webp" class="card-img-top" alt="...">
+                        <article class="card-body">
+                            <h5 class="card-title">SPIKE DIAMOND BRACELET</h5>
+                            <p class="card-text">Montado en oro rosado de 18k con 22 diamantes blancos</p>
+                        </article>
+                        <article class="card-footer fs-5">
+                            <strong small class="text-muted"> $150.000</strong>
+                        </article>
+                        <a href="#" class="btn btn-outline-secondary">Ver</a>
+                    </article>
+                </section>
+
+                <section class="col">
+                    <article class="card w-100 shadow-lg">
+                        <img src="./IMG/10.jpg" class="card-img-top" alt="...">
+                        <article class="card-body">
+                            <h5 class="card-title">DIAMOND SPIKE ONE BRACELET</h5>
+                            <p class="card-text">Montado en oro rosa de 18k y oro blanco de 18k con 7 diamantes blancos
+                            </p>
+                        </article>
+                        <article class="card-footer fs-5">
+                            <strong small class="text-muted"> $110.000</strong>
+                        </article>
+                        <a href="#" class="btn btn-outline-secondary">Ver</a>
+                    </article>
+                </section>
+
+                <section class="col">
+                    <article class="card w-100 shadow-lg">
+                        <img src="./IMG/10.webp" class="card-img-top" alt="...">
+                        <article class="card-body">
+                            <h5 class="card-title">SPIKE DIAMOND HOOPS</h5>
+                            <p class="card-text">Montado en oro rosa de 18k y oro blanco de 18k con 22 diamantes</p>
+                        </article>
+                        <article class="card-footer fs-5">
+                            <strong small class="text-muted"> $120.000</strong>
+                        </article>
+                        <a href="#" class="btn btn-outline-secondary">Ver</a>
+                    </article>
+                </section>
             </section>
 
-            <section class="articuloCaja">
-
-                <a class="articulo--caja" href="./pages/productos.html" data-aos="zoom-in-down">SHOP NOW!</a>
-            </section>
+        </section>
 
 
-            <section class="artesanos" data-aos="zoom-out-left">
-                <h2 class="titulo__artesania">ARTESANOS EXPERTOS</h2>
-                <p class="artesania__parrafo">El engaste de piedras preciosas excepcionales requiere el máximo cuidado,
-                    experiencia y precisión. Los artesanos suelen ser joyeros pasando su profesión de
-                    generación en generación y siempre apasionados por su trabajo. En nuestro Atelier en Buenos Aires,
-                    el
-                    tradicional
-                    centro de orfebrería de Argentina, ejecutamos este legado.</p>
-                <img class="imagen__artesanos" src="./IMG/artesanos.webp" alt="">
-            </section>
-        </main>
+        <section class="artesanos" data-aos="zoom-out-left">
+            <h2 class="titulo__artesania">ARTESANOS EXPERTOS</h2>
+            <p class="artesania__parrafo">El engaste de piedras preciosas excepcionales requiere el máximo
+                cuidado, experiencia y precisión. Los artesanos suelen ser joyeros pasando su profesión de
+                generación en generación y siempre apasionados por su trabajo. En nuestro Atelier en Buenos
+                Aires, el tradicional centro de orfebrería de Argentina, ejecutamos este legado.</p>
+            <img src="./IMG/artesanos.webp" class="img-fluid" alt="100%">
+        </section>
 
-        <footer>
-
-            <section class="footer__preguntas">
-                <h4 class="footer__faqs">Ayuda</h4>
-                <p class="footer__faqs">Preguntas Frecuentes</p>
-                <p class="footer__faqs">Segui tu envio</p>
-                <p class="footer__faqs">Medios de pago</p>
-                <p class="footer__faqs">Problemas con mi compra</p>
-            </section>
-
-            <div class="caja">
-                <a class="footer__caja" href="./pages/contacto.html">Contacto</a>
-                <a class="footer__caja" href="./pages/redesSociales.html">Redes Sociales</a>
-                <a class="footer__caja" href="./pages/ubicacion.html">Ubicacion</a>
-            </div>
-
-            </section>
+    </main>
 
 
-        </footer>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+    <footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-            crossorigin="anonymous"></script>
+        <section class="footer__preguntas">
+            <h4 class="footer__faqs">Ayuda</h4>
+            <p class="footer__faqs">Preguntas Frecuentes</p>
+            <p class="footer__faqs">Segui tu envio</p>
+            <p class="footer__faqs">Medios de pago</p>
+            <p class="footer__faqs">Problemas con mi compra</p>
+        </section>
 
+        <div class="caja">
+            <a class="footer__caja" href="./pages/contacto.html">Contacto</a>
+            <a class="footer__caja" href="./pages/redesSociales.html">Redes Sociales</a>
+            <a class="footer__caja" href="./pages/ubicacion.html">Ubicacion</a>
+        </div>
+        </section>
+
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</body>
 
 </html>

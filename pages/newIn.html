@@ -16,112 +16,120 @@
 
     <header>
 
-        <nav class="navegacion">
 
-            <h1 class="logo__header" data-aos="fade-right">Blessed</h1>
-            <div class="menuNavegacion">
-                <ul class="menu">
-                    <li class="barra__navegacion"><a class="enlace" href="./newIn.html">NEW IN</a></li>
-                    <li class="barra__navegacion"><a class="enlace" href="./productos.html">PRODUCTOS</a>
-                        <ul class="submenu__desplegable">
-                            <li class="barra__submenu"><a class="enlace__submenu" href="Pendientes">Pendientes</a></li>
-                            <li class="barra__submenu"><a class="enlace__submenu" href="Pulseras">Pulseras</a></li>
-                            <li class="barra__submenu"><a class="enlace__submenu" href="Cadenas">Colgantes</a></li>
-                            <li class="barra__submenu"><a class="enlace__submenu" href="Anillos">Anillos</a></li>
-                        </ul>
-                    </li>
-                    <li class="barra__navegacion"><a class="enlace" href="../index.html">INICIO</a></li>
-                    <li class="barra__navegacion"><a class="enlace" href="./ingreso.html">INGRESÁ</a></li>
-                    <li class="barra__navegacion"><a class="enlace" href="./registro.html">REGISTRATE</a></li>
-                </ul>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
 
         <section class="row">
-            <h2 class="newIn">NEW IN!</h2>
+            <nav class="navbar navbar-expand-lg">
 
-            <div class="card estilo">
-                <a class="estiloCard" href="#">
-                    <div class="imgContainer">
-                        <img src="../IMG/5.jpg" alt="producto1">
-                        <h3 class="titulo__producto">CROCODILE DIAMOND CHOKER</h3>
-                        <article class="descripcion__producto">
-                            <p class="descripcion__producto">Montado en oro blanco y rosado de 18k con 567 diamantes
-                                blancos</p>
-                            <strong class="precio">$57.000</strong>
-                        </article>
-                </a>
+                <div class="container-fluid">
+                    <section class="d-flex flex-grow-1">
+                        <span class="w-100 d-lg-none d-block"></span>
+                        <a href="../index.html" class="navbar-brand">Blessed</a>
+                        <div class="w-100 text-right">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#myNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
 
-            </div>
-            </div>
-            </div>
+                    </section>
+                    <section class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                        <ul class="navbar-nav ms-auto flex-nowrap">
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link active">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pages/newIn.html" class="nav-link">NEW IN</a>
+                            </li>
 
-            <div class="card estilo">
-                <a class="estiloCard" href="#">
-                    <div class="imgContainer">
-                        <img src="../IMG/8.webp" alt="producto1">
-                        <h3 class="titulo__producto">SPIKE DIAMOND HOOPS</h3>
-                        <article class="descripcion__producto">
-                            <p>Montado en oro blanco de 18K con 820 diamantes blancos</p>
-                            <strong class="precio">$120.000</strong>
-                        </article>
-                </a>
-            </div>
-            </div>
-            </div>
-
-            <div class="card estilo">
-                <a class="estiloCard" href="#">
-                    <div class="imgContainer">
-                        <img src="../IMG/3.jpg" alt="producto1">
-                        <h3 class="titulo__producto">NECKLACE IN ROSE GOLD</h3>
-                        <article class="descripcion__producto">
-                            <p>Necklace montado en oro rosa de 18K con 60 diamantes blancos</p>
-                            <strong class="precio">$90.000</strong>
-                        </article>
-                </a>
-            </div>
-            </div>
-            </div>
-
-            <div class="card estilo">
-                <a class="estiloCard" href="#">
-                    <div class="imgContainer">
-                        <img src="../IMG/10.webp" alt="producto1">
-                        <h3 class="titulo__producto">DREAM SPIKE DIAMANTE</h3>
-                        <article class="descripcion__producto">
-                            <p>Montado en oro rosa de 18k y oro blanco de 18k con 22 diamantes</p>
-                            <strong class="precio">$75.000</strong>
-                        </article>
-                </a>
-
-            </div>
-            </div>
-            </div>
-
-            <div class="card estilo">
-                <a class="estiloCard" href="#">
-                    <div class="imgContainer">
-                        <img src="../IMG/6.jpg" alt="producto1">
-                        <h3 class="titulo__producto">CROCODILE DIAMOND EARRINGS</h3>
-                        <article class="descripcion__producto">
-                            <p>Set en oro blanco y rosado de 18k con 552 diamantes blancos</p>
-                            <strong class="precio">$100.000</strong>
-                        </article>
-                </a>
-
-            </div>
-            </div>
-            </div>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../pages/productos.html" id="submenu"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false"> PRODUCTOS </a>
+                                <ul class="dropdown-menu" aria-labelledby="submenu">
+                                    <li><a class="dropdown-item" href="../pages/productos.html">VER PRODUCTOS</a></li>
+                                    <li><a class="dropdown-item" href="#">Cadenas</a></li>
+                                    <li><a class="dropdown-item" href="#">Pendientes</a></li>
+                                    <li><a class="dropdown-item" href="#">Pulseras</a></li>
+                                    <li><a class="dropdown-item" href="#">Anillos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-outline-secondary m-2"><a class="botones_barraNavegacion"
+                                href="../pages/ingreso.html">Login</a>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary"><a class="botones_barraNavegacion"
+                                href="../pages/registro.html">Sign up</a></button>
 
 
+                    </section>
+                </div>
+            </nav>
 
 
         </section>
+    </header>
+
+    <main class="container">
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
+            <div class="col">
+                <div class="card w-100">
+                    <img src="../IMG/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">NECKLACE IN ROSE GOLD</h5>
+                        <p class="card-text">Necklace montado en oro rosa de 18K con 60 diamantes blancos</p>
+                        <article class="card-footer fs-5">
+                            <strong small class="text-muted"> $150.000</strong>
+                        </article>
+                        <a href="#" class="btn btn-outline-secondary">Ver</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card w-100">
+                    <img src="../IMG/7.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SPIKE DIAMOND BRACELET</h5>
+                        <p class="card-text">Montado en oro rosado de 18k con 22 diamantes blancos</p>
+                        <article class="card-footer fs-5">
+                            <strong small class="text-muted"> $150.000</strong>
+                        </article>
+                        <a href="#" class="btn btn-outline-secondary">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card w-100">
+                    <img src="../IMG//1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">NECKLACE SPIKE DIAMOND</h5>
+                        <p class="card-text">Montado en oro rosa de 18k y oro blanco de 18k con 7 diamantes blancos</p>
+                        <article class="card-footer fs-5">
+                            <strong small class="text-muted"> $150.000</strong>
+                        </article>
+                        <a href="#" class="btn btn-outline-secondary">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card w-100">
+                    <img src="../IMG/6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CROCODILE DIAMOND EARRINGS</h5>
+                        <p class="card-text">Set en oro blanco y rosado de 18k con 552 diamantes blancos</p>
+                        <article class="card-footer fs-5">
+                            <strong small class="text-muted"> $150.000</strong>
+                        </article>
+                        <a href="#" class="btn btn-outline-secondary">Ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
 

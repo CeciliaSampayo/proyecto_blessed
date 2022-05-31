@@ -16,27 +16,53 @@
 
     <header>
 
-        <nav class="navegacion">
+        <section class="row">
+            <nav class="navbar navbar-expand-lg">
 
-            <h1 class="logo__header" data-aos="fade-right">Blessed</h1>
-            <div class="menuNavegacion">
-                <ul class="menu">
-                    <li class="barra__navegacion"><a class="enlace" href="./newIn.html">NEW IN</a></li>
-                    <li class="barra__navegacion"><a class="enlace" href="./productos.html">PRODUCTOS</a>
-                        <ul class="submenu__desplegable">
-                            <li class="barra__submenu"><a class="enlace__submenu" href="Pendientes">Pendientes</a></li>
-                            <li class="barra__submenu"><a class="enlace__submenu" href="Pulseras">Pulseras</a></li>
-                            <li class="barra__submenu"><a class="enlace__submenu" href="Cadenas">Colgantes</a></li>
-                            <li class="barra__submenu"><a class="enlace__submenu" href="Anillos">Anillos</a></li>
+                <div class="container-fluid">
+                    <section class="d-flex flex-grow-1">
+                        <span class="w-100 d-lg-none d-block"></span>
+                        <a href="../index.html" class="navbar-brand">Blessed</a>
+                        <div class="w-100 text-right">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#myNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+
+                    </section>
+                    <section class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                        <ul class="navbar-nav ms-auto flex-nowrap">
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link active">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pages/newIn.html" class="nav-link">NEW IN</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../pages/productos.html" id="submenu" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"> PRODUCTOS </a>
+                                <ul class="dropdown-menu" aria-labelledby="submenu">
+                                    <li><a class="dropdown-item" href="../pages/productos.html">VER PRODUCTOS</a></li>
+                                    <li><a class="dropdown-item" href="#">Cadenas</a></li>
+                                    <li><a class="dropdown-item" href="#">Pendientes</a></li>
+                                    <li><a class="dropdown-item" href="#">Pulseras</a></li>
+                                    <li><a class="dropdown-item" href="#">Anillos</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="barra__navegacion"><a class="enlace" href="../index.html">INICIO</a></li>
-                    <li class="barra__navegacion"><a class="enlace" href="./Ingreso.html">INGRESÁ</a></li>
-                    <li class="barra__navegacion"><a class="enlace" href="./registro.html">REGISTRATE</a></li>
-                </ul>
-                </ul>
-            </div>
-        </nav>
+                        <button type="button" class="btn btn-outline-secondary m-2"><a class="botones_barraNavegacion" href="../pages/ingreso.html">Login</a>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary"><a class="botones_barraNavegacion" href="../pages/registro.html">Sign up</a></button>
+
+
+                    </section>
+                </div>
+            </nav>
+
+
+        </section>
     </header>
 
     <main>
