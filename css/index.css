@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Koulen&family=Merriweather:ital@1&family=Radio+Canada:ital@1&family=Raleway:wght@300&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Koulen&family=Merriweather:ital@1&family=Montserrat:ital,wght@0,400;1,200;1,400&family=Radio+Canada:ital@1&family=Raleway:wght@300&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Koulen&family=Merriweather:ital@1&family=Montserrat:ital,wght@0,400;1,200;1,400&family=Radio+Canada:ital@1&family=Raleway:wght@300&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Koulen&family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
@@ -266,6 +267,28 @@ body {
 
 /*INICIO DE SESION / REGISTRARSE*/
 
+.bienvenido{
+    font-family: "Raleway", sans-serif;
+    
+}
+.form-label{ 
+    font-family: 'Dongle', sans-serif;
+    font-size: 15px;
+}
+
+.registro{
+    text-decoration: none;
+    font-family: 'Dongle', sans-serif;
+}
+
+.formSexo{
+    font-family: 'Dongle', sans-serif;
+}
+
+
+
+/*
+
 .formularioIngreso {
     margin: auto;
     width: 50%;
@@ -494,6 +517,18 @@ body {
 
 /*CONTACTO*/
 
+.contactoTitulo{
+    font-family: "Radio Canada", sans-serif;
+    font-size: 20px;
+}
+
+.contacto{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+/*
 .contacto {
     width: 450px;
     margin: auto;
@@ -553,7 +588,7 @@ textarea {
     font-size: 15px;
     margin-bottom: 20px;
 }
-
+*/
 .sucursales {
     display: inline-block;
     margin: 11px;
