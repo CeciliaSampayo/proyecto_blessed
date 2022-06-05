@@ -29,7 +29,7 @@
                 <div class="container-fluid">
                     <section class="d-flex flex-grow-1">
                         <span class="w-100 d-lg-none d-block"></span>
-                        <a href="#" class="navbar-brand">Blessed</a>
+                        <a href="#" class="navbar-brand" data-aos="fade-right">Blessed</a>
                         <div class="w-100 text-right">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#myNavbar">
@@ -38,8 +38,8 @@
                         </div>
 
                     </section>
-                    <section class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-                        <ul class="navbar-nav ms-auto flex-nowrap">
+                    <section class="menuNavegacion collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                        <ul class="menu navbar-nav ms-auto flex-nowrap">
                             <li class="nav-item">
                                 <a href="./index.html" class="nav-link active">INICIO</a>
                             </li>
@@ -50,12 +50,17 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="./pages/productos.html" id="submenu"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false"> PRODUCTOS </a>
-                                <ul class="dropdown-menu" aria-labelledby="submenu">
-                                    <li><a class="dropdown-item" href="./pages/productos.html">Ver productos</a></li>
-                                    <li><a class="dropdown-item" href="#">Cadenas</a></li>
-                                    <li><a class="dropdown-item" href="#">Pendientes</a></li>
-                                    <li><a class="dropdown-item" href="#">Pulseras</a></li>
-                                    <li><a class="dropdown-item" href="#">Anillos</a></li>
+                                <ul class="submenu__desplegable dropdown-menu" aria-labelledby="submenu">
+                                    <li class="barra__submenu"><a class="enlace__submenu dropdown-item"
+                                            href="./pages/productos.html">Ver productos</a></li>
+                                    <li class="barra__submenu"><a class="enlace__submenu dropdown-item"
+                                            href="#">Cadenas</a></li>
+                                    <li class="barra__submenu"><a class="enlace__submenu dropdown-item"
+                                            href="#">Pendientes</a></li>
+                                    <li class="barra__submenu"><a class="enlace__submenu dropdown-item"
+                                            href="#">Pulseras</a></li>
+                                    <li class="barra__submenu"><a class="enlace__submenu dropdown-item"
+                                            href="#">Anillos</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -78,10 +83,10 @@
 
     <main class="container">
 
-        <img src="./IMG/principal " class="img-fluid" alt="...">
+        <img src="./IMG/principal " class="img-fluid" alt="Mujer luciendo una gargantilla y unos aros de oro blanco">
 
         <section class="titulo__coleccion">
-            <h1>COLECCION AMAZONIA</h1>
+            <h1 data-aos="fade-right">COLECCION AMAZONIA</h1>
         </section>
 
 
@@ -89,9 +94,9 @@
 
             <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
 
-                <section class="col">
-                    <article class="card w-100 shadow-lg">
-                        <img src="./IMG/7.webp" class="card-img-top" alt="...">
+                <div class="col estilo">
+                    <article class="imgContainer card w-100 shadow-lg">
+                        <img src="./IMG/7.webp" class="card-img-top" alt="Brazalete montado en oro rosado de 18k con 22 diamantes blancos">
                         <article class="card-body">
                             <h5 class="card-title">SPIKE DIAMOND BRACELET</h5>
                             <p class="card-text">Montado en oro rosado de 18k con 22 diamantes blancos</p>
@@ -101,11 +106,11 @@
                         </article>
                         <a href="#" class="btn btn-outline-secondary">Ver</a>
                     </article>
-                </section>
+                </div>
 
-                <section class="col">
-                    <article class="card w-100 shadow-lg">
-                        <img src="./IMG/10.jpg" class="card-img-top" alt="...">
+                <section class="col estilo">
+                    <article class="imgContainer card w-100 shadow-lg">
+                        <img src="./IMG/10.jpg" class="card-img-top" alt="Brazalete montado en oro blanco y rosado de 18k con 7 diamantes blancos">
                         <article class="card-body">
                             <h5 class="card-title">DIAMOND SPIKE ONE BRACELET</h5>
                             <p class="card-text">Montado en oro rosa de 18k y oro blanco de 18k con 7 diamantes blancos
@@ -118,9 +123,9 @@
                     </article>
                 </section>
 
-                <section class="col">
-                    <article class="card w-100 shadow-lg">
-                        <img src="./IMG/10.webp" class="card-img-top" alt="...">
+                <section class="col estilo">
+                    <article class="imgContainer card w-100 shadow-lg">
+                        <img src="./IMG/10.webp" class="card-img-top" alt="Set de aros montado en oro blanco y rosado de 18k con 22 diamantes">
                         <article class="card-body">
                             <h5 class="card-title">SPIKE DIAMOND HOOPS</h5>
                             <p class="card-text">Montado en oro rosa de 18k y oro blanco de 18k con 22 diamantes</p>
@@ -135,20 +140,20 @@
 
         </section>
 
-
-        <section class="artesanos" data-aos="zoom-out-left">
-            <h2 class="titulo__artesania">ARTESANOS EXPERTOS</h2>
-            <p class="artesania__parrafo">El engaste de piedras preciosas excepcionales requiere el máximo
-                cuidado, experiencia y precisión. Los artesanos suelen ser joyeros pasando su profesión de
-                generación en generación y siempre apasionados por su trabajo. En nuestro Atelier en Buenos
-                Aires, el tradicional centro de orfebrería de Argentina, ejecutamos este legado.</p>
-            <img src="./IMG/artesanos.webp" class="img-fluid" alt="100%">
-        </section>
-
+        <div class="container">
+            <section class="artesanos" data-aos="zoom-out-left">
+                <h2 class="titulo__artesania">ARTESANOS EXPERTOS</h2>
+                <p class="artesania__parrafo">El engaste de piedras preciosas excepcionales requiere el máximo
+                    cuidado, experiencia y precisión. Los artesanos suelen ser joyeros pasando su profesión de
+                    generación en generación y siempre apasionados por su trabajo. En nuestro Atelier en Buenos
+                    Aires, el tradicional centro de orfebrería de Argentina, ejecutamos este legado.</p>
+                <img src="./IMG/artesanos.webp" class="imagen__artesanos" alt="imagen sobre artesanos puliendo una pieza de joyeria">
+            </section>
+        </div>
     </main>
 
 
-    <footer>
+    <footer class="container">
 
         <section class="footer__preguntas">
             <h4 class="footer__faqs">Ayuda</h4>

@@ -15,153 +15,107 @@
 <body>
 
   <header>
+    <section class="row">
+      <nav class="navbar navbar-expand-lg">
 
-    <header>
-      <section class="row">
-        <nav class="navbar navbar-expand-lg">
-
-          <div class="container-fluid">
-            <section class="d-flex flex-grow-1">
-              <span class="w-100 d-lg-none d-block"></span>
-              <a href="../index.html" class="navbar-brand">Blessed</a>
-              <div class="w-100 text-right">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
-
-            </section>
-            <section class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-              <ul class="navbar-nav ms-auto flex-nowrap">
-                <li class="nav-item">
-                  <a href="../index.html" class="nav-link active">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a href="../pages/newIn.html" class="nav-link">NEW IN</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="../pages/productos.html" id="submenu" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false"> PRODUCTOS </a>
-                  <ul class="dropdown-menu" aria-labelledby="submenu">
-                    <li><a class="dropdown-item" href="../pages/productos.html">Ver productos</a></li>
-                    <li><a class="dropdown-item" href="#">Cadenas</a></li>
-                    <li><a class="dropdown-item" href="#">Pendientes</a></li>
-                    <li><a class="dropdown-item" href="#">Pulseras</a></li>
-                    <li><a class="dropdown-item" href="#">Anillos</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-outline-secondary m-2"><a class="botones_barraNavegacion"
-                  href="../pages/ingreso.html">Login</a>
+        <div class="container-fluid">
+          <section class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"></span>
+            <a href="#" class="navbar-brand" data-aos="fade-right">Blessed</a>
+            <div class="w-100 text-right">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
               </button>
-              <button type="button" class="btn btn-outline-secondary"><a class="botones_barraNavegacion"
-                  href="../pages/registro.html">Sign up</a></button>
+            </div>
 
-
-            </section>
-          </div>
-        </nav>
-
-
-      </section>
-    </header>
-
-    <main class="container">
-
-      <section class="d-flex justify-content-center">
-
-        <div class="card col-sm-6 p-3 ">
-
-          <section class="contactoTitulo mb-3 text-center">
-            <h4>Contactate con nosotros!</h4>
           </section>
+          <section class="menuNavegacion collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="menu navbar-nav ms-auto flex-nowrap">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link active">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a href="./newIn.html" class="nav-link">NEW IN</a>
+              </li>
 
-          <section class="mb-3">
-            <form action="">
-              <section class="mb-3">
-                <label for="nombre"  class="contacto">Nombre</label>
-                <input type="text" class="form-control" name="nombre">
-              </section>
-
-              <section class="mb-3">
-                <label for="apellido" class="contacto">Apellido</label>
-                <input type="text" class="form-control" name="apellido">
-              </section>
-
-              <section class="mb-3">
-                <label for="email" class="contacto form-label">Correo electronico</label>
-                <input type="email" class="form-control" name="email">
-              </section>
-
-              <section class="mb-3">
-                <label for="mensaje" class="contacto">Dejanos tu mensaje</label>
-                <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
-              </section>
-
-              <section class="mb-3 d-grid">
-                <button type="submit" class="btn btn-outline-secondary">Enviar</button>
-
-              </section>
-            </form>
-
-            <p class="contacto mb-3 text-center"> Escribinos por WhatsApp >1528572887</p>
-            <p class="contacto mb-3 text-center">ventas@blessed.com.ar</p>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./productos.html" id="submenu" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false"> PRODUCTOS </a>
+                <ul class="submenu__desplegable dropdown-menu" aria-labelledby="submenu">
+                  <li class="barra__submenu"><a class="enlace__submenu dropdown-item" href="./productos.html">Ver
+                      productos</a></li>
+                  <li class="barra__submenu"><a class="enlace__submenu dropdown-item" href="#">Cadenas</a></li>
+                  <li class="barra__submenu"><a class="enlace__submenu dropdown-item" href="#">Pendientes</a></li>
+                  <li class="barra__submenu"><a class="enlace__submenu dropdown-item" href="#">Pulseras</a></li>
+                  <li class="barra__submenu"><a class="enlace__submenu dropdown-item" href="#">Anillos</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button type="button" class="btn btn-outline-secondary m-2"><a class="botones_barraNavegacion"
+                href="./ingreso.html">Login</a>
+            </button>
+            <button type="button" class="btn btn-outline-secondary"><a class="botones_barraNavegacion"
+                href="./registro.html">Sign up</a></button>
           </section>
         </div>
-      </section>
+      </nav>
+    </section>
 
+  </header>
+  <main class="container">
 
+    <section class="d-flex justify-content-center">
 
-      <!--
+      <div class="card col-sm-6 p-3 ">
 
+        <section class="contactoTitulo mb-3 text-center">
+          <h4>Contactate con nosotros!</h4>
+        </section>
 
-      <section class="contacto">
+        <section class="mb-3">
+          <form action="">
+            <section class="mb-3">
+              <label for="nombre" class="contacto">Nombre</label>
+              <input type="text" class="form-control" name="nombre">
+            </section>
 
-        <form class="contactoFormulario" action="" method="post">
-          <h2 class="texto__contacto">Contactenos</h2>
-          <input class="formulario" type="text" name="nombreDeUsuario" placeholder="Ingresa tu nombre de usuario">
-          <input class="formulario" type="password" name="contraseña" placeholder="Ingresa tu contraseña">
-          <textarea class="formulario" name="mensaje" placeholder="Dejanos tu mensaje"></textarea>
-          <input class="formulario" type="submit" value="Enviar" id="boton">
+            <section class="mb-3">
+              <label for="apellido" class="contacto">Apellido</label>
+              <input type="text" class="form-control" name="apellido">
+            </section>
 
+            <section class="mb-3">
+              <label for="email" class="contacto form-label">Correo electronico</label>
+              <input type="email" class="form-control" name="email">
+            </section>
 
-        </form>
+            <section class="mb-3">
+              <label for="mensaje" class="contacto">Dejanos tu mensaje</label>
+              <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
+            </section>
 
-        <p class="contacto__whatsapp"> Escribinos por WhatsApp >1528572887</p>
-        <p class="contacto__email">ventas@blessed.com.ar</p>
-      </section>
+            <section class="mb-3 d-grid">
+              <button type="submit" class="btn btn-outline-secondary">Enviar</button>
 
-    </main>
+            </section>
+          </form>
 
-    <footer>
-
-      <section class="footer__preguntas">
-        <h4 class="footer__faqs">Ayuda</h4>
-        <p class="footer__faqs">Preguntas Frecuentes</p>
-        <p class="footer__faqs">Segui tu envio</p>
-        <p class="footer__faqs">Medios de pago</p>
-        <p class="footer__faqs">Problemas con mi compra</p>
-      </section>
-
-      <div class="caja">
-        <a class="footer__caja" href="./contacto.html">Contacto</a>
-        <a class="footer__caja" href="./redesSociales.html">Redes Sociales</a>
-        <a class="footer__caja" href="./ubicacion.html">Ubicacion</a>
+          <p class="contacto mb-3 text-center"> Escribinos por WhatsApp >1528572887</p>
+          <p class="contacto mb-3 text-center">ventas@blessed.com.ar</p>
+        </section>
       </div>
+    </section>
 
-      </section>
--->
-      </footer>
+    </footer>
 
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
 
 </body>
 

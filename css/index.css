@@ -21,24 +21,8 @@ body {
     min-height: 100vh;
 }
 
-/*IMAGEN INDEX*/
-/*
-.imagen__index {
-    width: 100%;
-    margin: 20px 0px 20px 0px;
-}
-/*
-/*FIN IMAGEN INDEX*/
 
-/*LOGO*/
-/*
-.logo__header {
-    font-size: 100px;
-    font-family: 'Raleway', sans-serif;
-    color: rgba(0, 0, 0, 0.932);
-}
-/*
-/*FIN LOGO*/
+/*BARRA DE NAVEGACION*/
 
 .nav-link {
     color: rgb(41, 39, 39);
@@ -56,8 +40,9 @@ body {
     margin-left: 100px;
     font-size: 75px;
     letter-spacing: 3px;
-    font-family: "Radio Canada", sans-serif;
-    color: rgb(26, 3, 3);
+    font-size: 100px;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, 0.932); 
 }
 
 .navbar-collapse {
@@ -73,49 +58,12 @@ body {
     color: white;
 }
 
-/*HEADER*/
-/*
-.navegacion .logo__cabecera {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 300px;
-}
-
-.navegacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 30px auto;
-    background: rgb(255, 255, 255);
-}
-
-.navegacion ul {
-    list-style: none;
-}
-
-.menu>li {
-    display: inline-block;
-}
-
-.menu>.barra__navegacion>.enlace {
-    display: block;
-    padding: 15px 20px;
-    color: rgb(0, 0, 0);
-    font-family: "Ubuntu", sans-serif;
-    text-decoration: none;
-}
-
-.menu .barra__navegacion .enlace:hover {
-    color: rgb(0, 108, 248);
-}
-*/
 /*SUBMENU*/
 
-/*
 .submenu__desplegable {
     position: absolute;
-    background: rgba(0, 0, 0, 0.301);
+    background: rgba(231, 231, 231, 0.644);
+    border: none;
     width: 150px;
     visibility: hidden;
     opacity: 0;
@@ -125,7 +73,7 @@ body {
 .submenu__desplegable .barra__submenu .enlace__submenu {
     display: block;
     padding: 15px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: "Ubuntu", sans-serif;
     text-decoration: none;
 }
@@ -141,70 +89,13 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
+ /*FIN SUBMENU*/
 
-/*FIN DE BARRA DE NAVEGACION*/
+/*FIN BARRA NAVEGACION*/
+
+
 
 /* MAIN INDEX*/
-
-/*
-.row .titulo__coleccion{
-        width: 100%;   
-        display: flex;
-        justify-content: center;
-        margin-bottom: 70px;
-        margin-top: 50px;
-        font-family: 'Raleway', sans-serif;
-        font-size: 35px;
-
-}
-
-.titulo__producto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(34, 30, 25);
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.descripcion__producto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(53, 53, 53);
-}
-
-.precio{
-    margin-top: 10px;
-    font-size: 25px;
-}
-.estilo .titulo__producto:hover {
-    color: rgba(66, 66, 66, 0.514);
-
-}
-.articuloCaja {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.articulo--caja {
-    display: inline;
-    padding: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.575);
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    font-family: 'Fira Sans', sans-serif;
-    margin: 80px;
-    text-decoration: none;
-}
-
-.articulo--caja:hover {
-    color: rgba(0, 150, 250, 0.712);
-}
-
-*/
 
 .titulo__coleccion {
     width: 100%;
@@ -222,50 +113,46 @@ body {
     margin-top: 15px;
 }
 
-.artesanos{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 50px;
-}
-
-/*
 .artesanos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3 100px);
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3 200px);
     gap: 10px;
+    margin-top: 20px;
     
 }
 
 .titulo__artesania {
-    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/2;
     grid-row: 1;
     font-size: 35px;
     font-family: "Raleway", sans-serif;
-    margin-top: 80px;
+    
 }
 
 .artesania__parrafo {
-
-    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    grid-column: 1;
     grid-row: 2/3;
-    font-size: 20px;
+    font-size: 23px;
     font-family: "Raleway", sans-serif;
    
 }
 
 .imagen__artesanos {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 2;
-    width: 600px;
+    width: 100%;
 }
 
-/*FIN DE MAIN*/
+/*FIN DE MAIN INDEX*/
 
-/*INICIO DE SESION / REGISTRARSE*/
+
+
+/*INICIO DE SESION - REGISTRARSE*/
 
 .bienvenido{
     font-family: "Raleway", sans-serif;
@@ -285,66 +172,9 @@ body {
     font-family: 'Dongle', sans-serif;
 }
 
+/*FIN DE SESION - REGISTRARSE*/
 
 
-/*
-
-.formularioIngreso {
-    margin: auto;
-    width: 50%;
-    max-width: 500px;
-    background: rgba(255, 255, 255, 0.74);
-    padding: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.textoFormulario {
-    text-align: center;
-    margin-bottom: 20px;
-    color: rgba(0, 0, 0, 0.767);
-    font-family: "Koulen", cursive;
-    letter-spacing: 2px;
-}
-
-.input__formulario {
-    display: block;
-    padding: 10px;
-    width: 100%;
-    margin: 10px 0;
-    font-size: 20px;
-    border: 1px solid rgba(94, 71, 71, 0.562);
-}
-
-.label__formulario {
-    display: block;
-    padding: 5px;
-    width: 100%;
-    font-family: "Raleway", sans-serif;
-    font-size: 19px;
-}
-
-.input__formulario[type="submit"] {
-    background: rgb(0, 0, 0);
-    border: 0.2px solid black;
-    color: rgb(255, 255, 255);
-    opacity: 0.8;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-bottom: 0;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-
-.input__formulario[type="submit"]:hover {
-    opacity: 1;
-}
-
-.input__formulario[type="submit"]:active {
-    transform: scale(0.95);
-}
-
-/*FIN DE SESION / REGISTRARSE*/
 
 /*PRODUCTOS*/
 
@@ -386,6 +216,8 @@ body {
 
 /*FIN DE PRODUCTOS*/
 
+
+
 /*NEW IN Y TITULOS DE OTRAS CARDS*/
 
 .card-title {
@@ -405,47 +237,6 @@ body {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
 }
 
-/*
-.row {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-
-}
-
-.row .newIn {
-    width: 100%;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}/*
-
-.card {
-    width: 30%;
-    margin-bottom: 300px;
-
-}
-
-.estilo {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.estiloCard {
-    font-size: 20px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-
-
-}
-
-.estilo .estiloCard:hover {
-    color: rgba(66, 66, 66, 0.514);
-
-}
-
 .imgContainer {
     height: 400px;
     position: relative;
@@ -457,15 +248,19 @@ body {
     transition: all 25sg;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
 
-
 }
 
 .estilo:hover .imgContainer img {
-    transform: scale(1.02)
+    transform: scale(1.06)
 }
 
-/*
+.col{
+    margin-bottom: 280px;
+}
+
 /*FIN NEW IN*/
+
+
 
 /*REDES SOCIALES*/
 
@@ -515,6 +310,8 @@ body {
 
 /*FIN REDES SOCIALES*/
 
+
+
 /*CONTACTO*/
 
 .contactoTitulo{
@@ -528,67 +325,12 @@ body {
     color: black;
 }
 
-/*
-.contacto {
-    width: 450px;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.842);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px;
-    font-family: "Ubuntu", sans-serif;
-}
+/* FIN CONTACTO*/
 
-.texto__contacto {
-    color: white;
-    text-align: center;
-    margin: 0;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
 
-.formulario {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
-}
 
-textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-}
+/*SUCURSALES*/
 
-#boton {
-    background: rgba(0, 0, 0, 0.911);
-    color: white;
-    padding: 15px;
-}
-
-#boton:hover {
-    cursor: pointer;
-}
-
-.contacto__whatsapp {
-    color: white;
-    text-align: center;
-    margin: 0;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-
-.contacto__email {
-    color: white;
-    text-align: center;
-    margin: 0;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-*/
 .sucursales {
     display: inline-block;
     margin: 11px;
@@ -614,7 +356,8 @@ textarea {
     height: 400px;
 }
 
-/*FIN UBICACION*/
+/*FIN SUCURSALES*/
+
 
 /*FOOTER*/
 
@@ -651,95 +394,11 @@ textarea {
 
 /*FIN FOOTER*/
 
-/*HEADER/
-/*barra navegacion*/
 
-@media screen and (max-width: 652px) {
-    .navegacion {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 100px);
-        gap: 10px;
-        padding: 30px;
-    }
 
-    .menuNavegacion {
-        grid-column: 1;
-        grid-row: 2;
-        font-size: 25px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.562);
-        margin-top: 30px;
-    }
 
-    .logoHeader {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .logo__cabecera {
-        width: 100%;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 790px) {
-    .navegacion {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 100px);
-        gap: 10px;
-        padding: 30px;
-    }
-
-    .menuNavegacion {
-        grid-column: 1;
-        grid-row: 2;
-        font-size: 25px;
-        border-bottom: 1px solid black;
-        margin-top: 30px;
-    }
-
-    .logo__header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        color: rgba(0, 0, 0, 0.884);
-    }
-
-    .logo__cabecera {
-        width: 100%;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-    }
-}
-
-/*fin header*/
-
-/*MAIN*/
-
-@media screen and (max-width: 652px) {
-    .imagen__index {
-        width: 100%;
-        object-fit: contain;
-        margin-bottom: 20px;
-    }
-}
-
-/*FIN MAIN*/
-
-/*seccion informativa sobre Artesanos*/
+/*SECCION INFORMATIVA SOBRE ARTESANOS*/
 
 @media screen and (max-width: 652px) {
     .artesanos {
@@ -770,77 +429,8 @@ textarea {
     }
 }
 
-/*fin seccion artesanos*/
+/*FIN SECCION ARTESANOS*/
 
-/*PRODUCTOS*/
-
-@media screen and (max-width: 652px) {
-    .catalogo {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 30px;
-    }
-}
-
-/*FIN PRODUCTOS*/
-
-/* NEW IN*/
-
-@media screen and (max-width: 480px) {
-    .card {
-        width: 40.33%;
-    }
-
-    .estiloCard {
-        font-size: 29px;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-    }
-}
-
-@media screen and (max-width: 790px) {
-    .card {
-        width: 40.33%;
-        margin-bottom: 20px;
-    }
-
-    .estiloCard {
-        font-size: 24px;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-    }
-}
-
-@media screen and (max-width: 1075px) {
-    .card {
-        width: 40.33%;
-        margin-top: 10px;
-    }
-}
-
-/*FIN NEW IN*/
-
-/*REGISTRO E INICIO DE SESION*/
-
-@media screen and (max-width: 790px) {
-    .formularioIngreso {
-        margin: auto;
-        width: 50%;
-        max-width: 500px;
-        background: rgba(245, 92, 224, 0.295);
-        padding: 30px;
-        border: 1px solid rgba(245, 92, 224, 0.295);
-    }
-
-    @media screen and(max-whidth:652px) {
-        .formularioIngreso {
-            width: 75%;
-        }
-    }
-}
-
-/*FIN FORMULARIO INICIO DE SESION*/
 
 /*UBICACION*/
 
@@ -895,7 +485,8 @@ textarea {
 
 /*FIN REDES SOCIALES*/
 
-/*footer*/
+
+/*FOOTER*/
 
 @media screen and (max-width: 652px) {
     .footer__preguntas {
@@ -933,4 +524,4 @@ textarea {
     }
 }
 
-/*fin footer*/
+/*FIN FOOTER*/
