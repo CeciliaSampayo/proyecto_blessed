@@ -1,0 +1,55 @@
+.card__productos {
+
+    .titulo__coleccion {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+        margin-top: 50px;
+        font-family: $font-secondary;
+        font-size: $text-large;
+    }
+
+    .cardIndex {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+}
+
+.artesanos__card {
+
+    .artesanos {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(3 200px);
+        gap: 10px;
+        margin-top: 20px;
+
+        &__titulo {
+            display: flex;
+            justify-content: center;
+            grid-column: 1/2;
+            grid-row: 1;
+            font-size: $text-large;
+            font-family: $font-secondary;
+        }
+
+        &__parrafo {
+            display: flex;
+            justify-content: center;
+            grid-column: 1;
+            grid-row: 2/3;
+            font-size: $text-small;
+            font-family: $font-secondary;
+        }
+
+        &__imagen {
+            grid-column: 2;
+            grid-row: 2;
+            width: 100%;
+        }
+
+    }
+} 

@@ -1,0 +1,28 @@
+/*Externos*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Koulen&family=Merriweather:ital@1&family=Radio+Canada:ital@1&family=Raleway:wght@300&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
+
+
+/*Misc*/ 
+
+@import "./misc/variables";
+@import "./misc/normalize";
+@import "./misc/media";
+
+/*Partials*/ 
+
+@import "./partials/header";
+@import "./partials/footer";
+
+/*Pages*/
+
+@import "./pages/contacto";
+@import "./pages/home";
+@import "./pages/login";
+@import "./pages/newIn";
+@import "./pages/productos";
+@import "./pages/ubicacion";

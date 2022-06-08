@@ -1,0 +1,165 @@
+/*PRODUCTOS*/
+
+@media screen and (max-width: 580px) {
+
+    .joyas__link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .joyas:hover {
+        color:$text-hover;
+    }
+    
+    .joyas--bordes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom: 1px solid $text-color;
+        padding: 2px;
+        color: $text-color;
+        margin: 10px;
+        font-family: $font-principal;
+        font-style: initial;
+        font-size: $text-xSmall
+    }
+
+    .imgContainer{
+        margin-bottom: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+
+}
+
+/*SECCION INFORMATIVA SOBRE ARTESANOS*/
+
+@media screen and (max-width: 652px) {
+    .artesanos {
+        display: grid;
+        grid-template-columns: 1fr, 2rf, 1fr;
+        grid-template-rows: 1fr repeat(2, 150px);
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .artesanos__titulo {
+        grid-column: 1/2;
+        grid-row: 1;
+        font-size: $text-small;
+        font-family: $font-secondary;
+    }
+
+    .artesanos__parrafo {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        font-size: $text-xSmall;
+        font-family: $font-secondary;
+    }
+
+    .artesanos__imagen {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+}
+
+/*FIN SECCION ARTESANOS*/
+
+
+/*UBICACION*/
+
+@media screen and (max-width: 790px) {
+    .sucursales {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: $text-medium;
+        margin-bottom: 40px;
+        font-family: $font-section;
+    }
+
+    .sucursales__ubicacion--bordes {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border: 0.5px solid $text-color;
+        letter-spacing: 2px;
+        font-size: $text-base;
+        font-family: $font-section;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sucursales {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 40px;
+    }
+
+    .sucursales__ubicacion--bordes {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border: 0.5px solid $text-color;
+        letter-spacing: 2px;
+    }
+}
+
+/*REDES SOCIALES*/
+
+@media screen and (max-width: 780px) {
+    .redesSociales--texto {
+        font-family: $font-principal;
+        color: $primary;
+        padding: 5px;
+        background: $secondary;
+    }
+}
+
+/*FIN REDES SOCIALES*/
+
+
+/*FOOTER*/
+
+@media screen and (max-width: 652px) {
+    .footer__preguntas {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: $text-xSmall;
+        color: $text-color;
+        font-family: $font-principal;
+    }
+}
+
+@media screen and (max-width: 652px) {
+    .footer__box {
+        text-decoration: none;
+        color: $text-color;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.096);
+        font-size: $text-xSmall;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__box {
+        color: $text-color;
+        padding: 10px;
+        background: $primary;
+        font-size: $text-xSmall;
+        border: 1px solid $primary;
+    }
+}
+
+/*FIN FOOTER*/

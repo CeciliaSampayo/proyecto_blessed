@@ -1,0 +1,70 @@
+/*BARRA NAVEGACION*/
+
+.navbar {
+    .container-fluid {
+        .navbar-brand {
+            margin-left: 100px;
+            font-size: $text-extraLarge;
+            letter-spacing: 3px;
+            font-size: $text-maxLarge;
+            font-family: $font-secondary;
+            color: $secondary;
+        }
+    } 
+
+    .menuNavegacion {
+        margin-right: 95px;
+
+        .nav-link {
+            color: $text-textoSecundario;
+            font-family: $font-principal;
+        }
+    }
+
+    .menu {
+        .dropdown-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-principal;
+        }
+
+
+        li:hover {       
+                visibility: visible;
+                opacity: 1;
+
+             }
+
+            .submenu__desplegable{
+                position: absolute;
+                background: $text-submenu;
+                border: none;
+                width: 150px;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity 1.5s;
+            }
+        }
+      
+        .barra__submenu {
+
+            .enlace__submenu {
+                display: block;
+                padding: 15px;
+                color: $text-sections;
+                font-family: $font-principal;
+                text-decoration: none;
+            }
+        }
+
+        .botones__barraNavegacion {
+            text-decoration: none;
+            color: $text-color;
+        }
+
+        .botones__barraNavegacion:hover {
+            color: $primary;
+        }
+
+    }

@@ -1,0 +1,255 @@
+/*Externos*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Koulen&family=Merriweather:ital@1&family=Radio+Canada:ital@1&family=Raleway:wght@300&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
+/*Misc*/
+/*COLORES*/
+/*FONT FAMILY*/
+/*FONT SIZES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; }
+
+/*PRODUCTOS*/
+@media screen and (max-width: 580px) {
+  .joyas__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .joyas:hover {
+    color: #488888b2; }
+  .joyas--bordes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid #000000;
+    padding: 2px;
+    color: #000000;
+    margin: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: initial;
+    font-size: 1.2em; }
+  .imgContainer {
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+
+/*SECCION INFORMATIVA SOBRE ARTESANOS*/
+@media screen and (max-width: 652px) {
+  .artesanos {
+    display: grid;
+    grid-template-columns: 1fr, 2rf, 1fr;
+    grid-template-rows: 1fr repeat(2, 150px);
+    gap: 10px;
+    padding: 30px; }
+  .artesanos__titulo {
+    grid-column: 1/2;
+    grid-row: 1;
+    font-size: 1.5em;
+    font-family: "Raleway", sans-serif; }
+  .artesanos__parrafo {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 1.2em;
+    font-family: "Raleway", sans-serif; }
+  .artesanos__imagen {
+    grid-column: 1/3;
+    grid-row: 3/5; } }
+
+/*FIN SECCION ARTESANOS*/
+/*UBICACION*/
+@media screen and (max-width: 790px) {
+  .sucursales {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    font-family: "Fira Sans", sans-serif; }
+  .sucursales__ubicacion--bordes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: 0.5px solid #000000;
+    letter-spacing: 2px;
+    font-size: 1.8em;
+    font-family: "Fira Sans", sans-serif; } }
+
+@media screen and (max-width: 480px) {
+  .sucursales {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px; }
+  .sucursales__ubicacion--bordes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: 0.5px solid #000000;
+    letter-spacing: 2px; } }
+
+/*REDES SOCIALES*/
+@media screen and (max-width: 780px) {
+  .redesSociales--texto {
+    font-family: "Ubuntu", sans-serif;
+    color: #FFFFFF;
+    padding: 5px;
+    background: #000000ee; } }
+
+/*FIN REDES SOCIALES*/
+/*FOOTER*/
+@media screen and (max-width: 652px) {
+  .footer__preguntas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2em;
+    color: #000000;
+    font-family: "Ubuntu", sans-serif; } }
+
+@media screen and (max-width: 652px) {
+  .footer__box {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.096);
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .footer__box {
+    color: #000000;
+    padding: 10px;
+    background: #FFFFFF;
+    font-size: 1.2em;
+    border: 1px solid #FFFFFF; } }
+
+/*FIN FOOTER*/
+/*Partials*/
+/*BARRA NAVEGACION*/
+.navbar .container-fluid .navbar-brand {
+  margin-left: 100px;
+  font-size: 7.5em;
+  letter-spacing: 3px;
+  font-size: 6em;
+  font-family: "Raleway", sans-serif;
+  color: #000000ee; }
+
+.navbar .menuNavegacion {
+  margin-right: 95px; }
+  .navbar .menuNavegacion .nav-link {
+    color: #292727;
+    font-family: "Ubuntu", sans-serif; }
+
+.navbar .menu .dropdown-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif; }
+
+.navbar .menu li:hover .submenu__desplegable {
+  visibility: visible;
+  opacity: 1; }
+
+.navbar .menu .submenu__desplegable {
+  position: absolute;
+  background: #e7e7e7a4;
+  border: none;
+  width: 150px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s; }
+
+.navbar .barra__submenu .enlace__submenu {
+  display: block;
+  padding: 15px;
+  color: #423f3fc7;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none; }
+
+.navbar .botones__barraNavegacion {
+  text-decoration: none;
+  color: #000000; }
+
+.navbar .botones__barraNavegacion:hover {
+  color: #FFFFFF; }
+
+.footer .footer__preguntas {
+  display: flex;
+  flex-direction: column;
+  font-family: "Ubuntu", sans-serif;
+  margin: 50px; }
+  .footer .footer__preguntas .footer__faqs {
+    margin: 8px;
+    display: flex;
+    justify-content: center; }
+
+.footer .box {
+  display: flex;
+  flex-direction: row;
+  font-family: "Ubuntu", sans-serif; }
+  .footer .box .footer__box {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    width: 100%; }
+
+/*Pages*/
+.card__productos .titulo__coleccion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  margin-top: 50px;
+  font-family: "Raleway", sans-serif;
+  font-size: 3.5em; }
+
+.card__productos .cardIndex {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; }
+
+.artesanos__card .artesanos {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(3 200px);
+  gap: 10px;
+  margin-top: 20px; }
+  .artesanos__card .artesanos__titulo {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1;
+    font-size: 3.5em;
+    font-family: "Raleway", sans-serif; }
+  .artesanos__card .artesanos__parrafo {
+    display: flex;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 2/3;
+    font-size: 1.5em;
+    font-family: "Raleway", sans-serif; }
+  .artesanos__card .artesanos__imagen {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%; }

@@ -1,0 +1,33 @@
+.footer {
+
+    .footer__preguntas {
+        display: flex;
+        flex-direction: column;
+        font-family: $font-principal;
+        margin: 50px;
+
+        .footer__faqs {
+            margin: 8px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        font-family: $font-principal;
+
+        .footer__box {
+            text-decoration: none;
+            color: $primary;
+            padding: 20px;
+            background: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 10px;
+            width: 100%;
+        }
+    }
+}
