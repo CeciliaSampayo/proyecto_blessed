@@ -1,73 +1,445 @@
+/*Media Query 1024px*/
+@media screen and (min-width:1024px) {
+    .card__productos {
+        .box__cardIndex {
+
+            .card-title {
+                font-size: $text-xxSmall;
+            }
+
+            .card-text {
+                font-size: $text-xxSmall;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .card__productos {
+        .artesanos__card {
+            .artesanos {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+
+                .artesanos__titulo {
+
+                    font-size: $text-medium;
+                    font-family: $font-secondary;
+                }
+
+                .artesanos__parrafo {
+
+                    font-size: $text-xSmall;
+                    font-family: $font-secondary;
+                }
+
+                .artesanos__imagen {
+
+                    width: 50%;
+
+                }
+            }
+
+        }
+    }
+
+}
+
+/*Fin Media Query 1024px*/
+
+/*Media Query 768px*/
+
+@media screen and (min-width:768px) {
+    .card__productos {
+        .box__cardIndex {
+
+            .card-title {
+                font-size: $text-xxSmall;
+            }
+
+            .card-text {
+                font-size: $text-xxxSmall;
+            }
+
+            .card-footer {
+                font-size: $text-xxxSmall;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .card__productos {
+        .artesanos__card {
+            .artesanos {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+
+                .artesanos__titulo {
+
+                    font-size: $text-medium;
+                    font-family: $font-secondary;
+                }
+
+                .artesanos__parrafo {
+
+                    font-size: $text-xSmall;
+                    font-family: $font-secondary;
+                }
+
+                .artesanos__imagen {
+
+                    width: 50%;
+
+                }
+            }
+
+        }
+    }
+
+}
+
+/*Fin Media Query 780px*/
+
+/*Media Query 600px*/
+
+@media screen and (min-width:600px) {
+    .card__productos {
+        .box__cardIndex {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .card-title {
+                font-size: $text-xxSmall;
+            }
+
+            .card-text {
+                font-size: $text-xxxSmall;
+            }
+
+            .card-footer {
+                font-size: $text-xxxSmall;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .card__productos {
+        .artesanos__card {
+            .artesanos {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+
+                .artesanos__titulo {
+
+                    font-size: $text-medium;
+                    font-family: $font-secondary;
+                }
+
+                .artesanos__parrafo {
+
+                    font-size: $text-xSmall;
+                    font-family: $font-secondary;
+                }
+
+                .artesanos__imagen {
+
+                    width: 50%;
+
+                }
+            }
+
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .footer {
+
+        .footer__preguntas {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-principal;
+            font-size: $text-xxSmall;
+            color: $text-color;
+            margin: 50px;
+
+            .footer__faqs {
+                margin: 8px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            font-family: $font-principal;
+
+            .footer__box {
+                text-decoration: none;
+                color: $primary;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+/*Fin Media Query 600px*/
+
+/*Media Query 480px*/
+
+@media screen and (min-width:480px) {
+    .card__productos {
+
+        .box__cardIndex {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+
+            .imgContainer {
+                height: 400px;
+                position: relative;
+
+            }
+
+        }
+    }
+
+    .card-title {
+        font-size: $text-xxSmall;
+    }
+
+    .card-text {
+        font-size: $text-xxxSmall;
+    }
+
+    .card-footer {
+        font-size: $text-xxxSmall;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .card__productos {
+        .artesanos__card {
+            .artesanos {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+
+                .artesanos__titulo {
+
+                    font-size: $text-medium;
+                    font-family: $font-secondary;
+                }
+
+                .artesanos__parrafo {
+
+                    font-size: $text-xSmall;
+                    font-family: $font-secondary;
+                }
+
+                .artesanos__imagen {
+
+                    width: 50%;
+
+                }
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+
+        .footer__preguntas {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-principal;
+            font-size: $text-xxSmall;
+            color: $text-color;
+            margin: 50px;
+
+            .footer__faqs {
+                margin: 8px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            font-family: $font-principal;
+
+            .footer__box {
+                padding: 0px;
+                text-decoration: none;
+                color: $primary;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+/*Fin Media Query 480px*/
+
+/*Media query 320px*/
+@media screen and (min-width: 320px) {
+    .artesanos__card {
+
+        .artesanos {
+
+            display: grid;
+            grid-template-columns: 1fr, 2rf, 1fr;
+            grid-template-rows: 1fr repeat(3, 150px);
+            gap: 10px;
+            padding: 30px;
+
+            .artesanos__titulo {
+                grid-column: 1/2;
+                grid-row: 1;
+                font-size: $text-small;
+                font-family: $font-secondary;
+            }
+
+            .artesanos__parrafo {
+                grid-column: 1/3;
+                grid-row: 2/3;
+                font-size: $text-xxSmall;
+                font-family: $font-secondary;
+            }
+
+            .artesanos__imagen {
+
+                grid-column: 1/3;
+                grid-row: 4;
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .footer {
+
+        .footer__preguntas {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-principal;
+            font-size: $text-xxSmall;
+            color: $text-color;
+            margin: 50px;
+
+            .footer__faqs {
+                margin: 8px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            font-family: $font-principal;
+
+            .footer__box {
+                text-decoration: none;
+                display: flex;
+                border: none;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+/*Fin Media Query 320px*/
+
+
+
 /*PRODUCTOS*/
 
-@media screen and (max-width: 580px) {
+@media screen and (min-width: 320px) {
 
     .joyas__link {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    
+
     .joyas:hover {
-        color:$text-hover;
+        color: $text-hover;
     }
-    
+
     .joyas--bordes {
         display: flex;
         flex-direction: row;
         justify-content: center;
         border-bottom: 1px solid $text-color;
         padding: 2px;
+
         color: $text-color;
         margin: 10px;
         font-family: $font-principal;
         font-style: initial;
-        font-size: $text-xSmall
+        font-size: $text-xSmall;
     }
 
-    .imgContainer{
-        margin-bottom: 130px;
+    .box__productos {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-       
+
     }
+
+
 
 
 }
-
-/*SECCION INFORMATIVA SOBRE ARTESANOS*/
-
-@media screen and (max-width: 652px) {
-    .artesanos {
-        display: grid;
-        grid-template-columns: 1fr, 2rf, 1fr;
-        grid-template-rows: 1fr repeat(2, 150px);
-        gap: 10px;
-        padding: 30px;
-    }
-
-    .artesanos__titulo {
-        grid-column: 1/2;
-        grid-row: 1;
-        font-size: $text-small;
-        font-family: $font-secondary;
-    }
-
-    .artesanos__parrafo {
-        grid-column: 1/3;
-        grid-row: 2/3;
-        font-size: $text-xSmall;
-        font-family: $font-secondary;
-    }
-
-    .artesanos__imagen {
-        grid-column: 1/3;
-        grid-row: 3/5;
-    }
-}
-
-/*FIN SECCION ARTESANOS*/
 
 
 /*UBICACION*/
@@ -124,42 +496,4 @@
 /*FIN REDES SOCIALES*/
 
 
-/*FOOTER*/
 
-@media screen and (max-width: 652px) {
-    .footer__preguntas {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: $text-xSmall;
-        color: $text-color;
-        font-family: $font-principal;
-    }
-}
-
-@media screen and (max-width: 652px) {
-    .footer__box {
-        text-decoration: none;
-        color: $text-color;
-        padding: 10px;
-        background: rgba(0, 0, 0, 0.096);
-        font-size: $text-xSmall;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 10px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .footer__box {
-        color: $text-color;
-        padding: 10px;
-        background: $primary;
-        font-size: $text-xSmall;
-        border: 1px solid $primary;
-    }
-}
-
-/*FIN FOOTER*/

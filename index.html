@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blessed</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon" href="./IMG/Favicon.png" type="image/x-icon">
@@ -20,12 +20,12 @@
 
 <body>
 
-    <header>
+    <header class="container">
 
         <section class="row">
             <nav class="navbar navbar-expand-lg">
 
-                <div class="container-fluid">
+                <div class="container__nav container-fluid">
                     <section class="d-flex flex-grow-1">
                         <span class="w-100 d-lg-none d-block"></span>
                         <a href="#" class="navbar-brand" data-aos="fade-right">Blessed</a>
@@ -84,25 +84,26 @@
 
         <section class="card__productos">
 
-            <img src="./IMG/principal " class="img-fluid"
+            <img src="./IMG/principal " class="imagen__principal img-fluid"
                 alt="Mujer luciendo una gargantilla y unos aros de oro blanco">
 
-            <section class="titulo__coleccion">
-                <h1 data-aos="fade-right">COLECCION AMAZONIA</h1>
-            </section>
-
+            <div class="titulo__box">
+                <section class="titulo__coleccion">
+                    <h1 data-aos="tituloColeccion fade-right">COLECCION AMAZONIA</h1>
+                </section>
+            </div>
 
             <section class="cardIndex">
 
-                <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
+                <section class="box__cardIndex row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 text-center ">
 
-                    <div class="col estilo">
-                        <article class="imgContainer card w-100  shadow-lg">
+                    <div class="box__index col estilo ">
+                        <article class="box__card imgContainer card w-100 shadow-lg ">
                             <img src="./IMG/7.webp" class="card-img-top"
                                 alt="Brazalete montado en oro rosado de 18k con 22 diamantes blancos">
                             <article class="card-body">
                                 <h5 class="card-title">SPIKE DIAMOND BRACELET</h5>
-                                <p class="card-text">Montado en oro rosado de 18k con 22 diamantes blancos</p>
+                                <p class="card-text">Montado en oro rosado de 18k y oro blanco de 18k con 22 diamantes blancos</p>
                             </article>
                             <article class="card-footer fs-5">
                                 <strong small class="text-muted"> $150.000</strong>
@@ -111,8 +112,8 @@
                         </article>
                     </div>
 
-                    <section class="col estilo">
-                        <article class="imgContainer card w-100 shadow-lg">
+                    <section class="box__index col estilo">
+                        <article class="box_card imgContainer card w-100 shadow-lg">
                             <img src="./IMG/10.jpg" class="card-img-top"
                                 alt="Brazalete montado en oro blanco y rosado de 18k con 7 diamantes blancos">
                             <article class="card-body">
@@ -128,8 +129,8 @@
                         </article>
                     </section>
 
-                    <section class="col estilo">
-                        <article class="imgContainer card w-100 shadow-lg">
+                    <section class="box__index col estilo">
+                        <article class="box_card imgContainer card w-100 shadow-lg">
                             <img src="./IMG/10.webp" class="card-img-top"
                                 alt="Set de aros montado en oro blanco y rosado de 18k con 22 diamantes">
                             <article class="card-body">
@@ -145,16 +146,17 @@
                 </section>
 
             </section>
-
+            
             <div class="artesanos__card container">
                 <section class="artesanos" data-aos="zoom-out-left">
                     <h2 class="artesanos__titulo">ARTESANOS EXPERTOS</h2>
+                    <img src="./IMG/artesanos.webp" class="artesanos__imagen"
+                        alt="imagen sobre artesanos puliendo una pieza de joyeria">
                     <p class="artesanos__parrafo">El engaste de piedras preciosas excepcionales requiere el máximo
                         cuidado, experiencia y precisión. Los artesanos suelen ser joyeros pasando su profesión de
                         generación en generación y siempre apasionados por su trabajo. En nuestro Atelier en Buenos
                         Aires, el tradicional centro de orfebrería de Argentina, ejecutamos este legado.</p>
-                    <img src="./IMG/artesanos.webp" class="artesanos__imagen"
-                        alt="imagen sobre artesanos puliendo una pieza de joyeria">
+                    
                 </section>
             </div>
 
@@ -183,14 +185,14 @@
 
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                crossorigin="anonymous"></script>
 
 </body>
 

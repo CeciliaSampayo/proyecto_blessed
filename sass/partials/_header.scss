@@ -3,10 +3,8 @@
 .navbar {
     .container-fluid {
         .navbar-brand {
-            margin-left: 100px;
-            font-size: $text-extraLarge;
             letter-spacing: 3px;
-            font-size: $text-maxLarge;
+            font-size: $text-large;
             font-family: $font-secondary;
             color: $secondary;
         }

@@ -34,6 +34,8 @@
     --text-base: 1.8em;
     --text-small: 1.5em;
     --text-xSmall: 1.2em;
+    --text-xxSmall:0.9em;
+    --text-xxxSmall: 0.7em;
 
 }
 
@@ -389,7 +391,7 @@ body {
 
 
 /*FOOTER*/
-
+/*
 .footer__preguntas {
     display: flex;
     flex-direction: column;
@@ -427,12 +429,16 @@ body {
 
 /*PRODUCTOS*/
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 480px) {
 
     .joyas__link {
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    .joyas {
+        font-size: var(--text-medium);
     }
     
     .joyas:hover {
@@ -449,22 +455,59 @@ body {
         margin: 10px;
         font-family: var(--font-principal);
         font-style: initial;
-        font-size: var(--text-xSmall);
+        font-size: var(--text-xxxSmall) ;
     }
 
-    .imgContainer{
-        margin-bottom: 130px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
+    .box__productos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
     }
 
+    .imgContainer {
+        height: 100px;
+        margin: 50px 0px 50px 0px;
+    
+    }
+
+    .card-title {
+        font-family: var(--font-principal);
+        font-size: var(--text-submenu);
+    }
+    
+    .card-title:hover {
+        color: var(--text-hover);
+    }
+    
+    .card-text {
+        font-family: var(--font-principal);
+        color: var(--font-section);
+        font-size: var(--text-xxxSmall);
+    }
+    
+    .card {
+        box-shadow: 5px 5px 5px var(--shadow);
+    }
+    
+    .estilo .imgContainer img {
+        width: 100%;
+        transition: all 25sg;
+        box-shadow: 5px 5px 5px var(--shadow);
+    
+    }
+    
+    .estilo:hover .imgContainer img {
+        transform: scale(1.06)
+    }
 
 }
 
-/*SECCION INFORMATIVA SOBRE ARTESANOS*/
+@media screen and (max-width: 700px){}
 
+
+/*SECCION INFORMATIVA SOBRE ARTESANOS*/
+/*
 @media screen and (max-width: 652px) {
     .artesanos {
         display: grid;
@@ -552,7 +595,7 @@ body {
 
 
 /*FOOTER*/
-
+/*
 @media screen and (max-width: 652px) {
     .footer__preguntas {
         display: flex;
