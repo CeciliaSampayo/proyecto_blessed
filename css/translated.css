@@ -217,7 +217,7 @@ body {
 
 /*Fin Media Query 480px*/
 /*Media query 320px*/
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .artesanos__card .artesanos {
     display: grid;
     grid-template-columns: 1fr, 2rf, 1fr;
@@ -349,7 +349,7 @@ body {
   align-items: center;
   font-family: "Ubuntu", sans-serif; }
 
-.navbar .menu li:hover {
+.navbar .menu li:hover .submenu__desplegable {
   visibility: visible;
   opacity: 1; }
 

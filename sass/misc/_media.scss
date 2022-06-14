@@ -323,7 +323,8 @@
 /*Fin Media Query 480px*/
 
 /*Media query 320px*/
-@media screen and (min-width: 320px) {
+
+@media screen and (max-width: 320px) {
     .artesanos__card {
 
         .artesanos {
