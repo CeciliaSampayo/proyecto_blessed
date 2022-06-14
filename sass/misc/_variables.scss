@@ -1,13 +1,24 @@
  /*COLORES*/
- $base: #FFFFFF;
- $primary: #FFFFFF;
- $secondary: #000000ee;
- $text-color: #000000;
- $text-sections: #423f3fc7;
- $text-submenu: #e7e7e7a4;
- $text-textoSecundario: #292727;
- $text-hover: #488888b2;
- $shadow: #00000027;
+ $colors:( 
+ base: #FFFFFF,
+ primary: #FFFFFF,
+ secondary: #000000ee,
+ text-color: #000000,
+ text-sections: #423f3fc7,
+ text-submenu: #e7e7e7a4,
+ text-textoSecundario: #292727,
+ text-hover: #488888b2,
+ shadow: #00000027,
+ );
+
+ @each $colors, $value in $colors {
+    .#{$colors} {
+
+        color:#{$value}
+
+    }
+    
+ }
 
  /*FONT FAMILY*/
  $font-principal: "Ubuntu", sans-serif;

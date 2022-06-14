@@ -6,7 +6,7 @@
             letter-spacing: 3px;
             font-size: $text-large;
             font-family: $font-secondary;
-            color: $secondary;
+            color:map-get($colors, secondary);
         }
     } 
 
@@ -14,7 +14,7 @@
         margin-right: 95px;
 
         .nav-link {
-            color: $text-textoSecundario;
+            color: map-get($colors, text-textoSecundario);
             font-family: $font-principal;
         }
     }
@@ -36,7 +36,7 @@
 
             .submenu__desplegable{
                 position: absolute;
-                background: $text-submenu;
+                background: map-get($colors, text-submenu);
                 border: none;
                 width: 150px;
                 visibility: hidden;
@@ -50,7 +50,7 @@
             .enlace__submenu {
                 display: block;
                 padding: 15px;
-                color: $text-sections;
+                color: map-get($colors, text-sections);
                 font-family: $font-principal;
                 text-decoration: none;
             }
@@ -58,11 +58,11 @@
 
         .botones__barraNavegacion {
             text-decoration: none;
-            color: $text-color;
+            color:map-get($colors, text-color);
         }
 
         .botones__barraNavegacion:hover {
-            color: $primary;
+            color: map-get($colors, primary);
         }
 
     }

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: $base;
+    background-color:map-get($colors, base);
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;

@@ -7,6 +7,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
 /*Misc*/
 /*COLORES*/
+.base {
+  color: #FFFFFF; }
+
+.primary {
+  color: #FFFFFF; }
+
+.secondary {
+  color: #000000ee; }
+
+.text-color {
+  color: #000000; }
+
+.text-sections {
+  color: #423f3fc7; }
+
+.text-submenu {
+  color: #e7e7e7a4; }
+
+.text-textoSecundario {
+  color: #292727; }
+
+.text-hover {
+  color: #488888b2; }
+
+.shadow {
+  color: #00000027; }
+
 /*FONT FAMILY*/
 /*FONT SIZES*/
 * {
@@ -322,7 +349,7 @@ body {
   align-items: center;
   font-family: "Ubuntu", sans-serif; }
 
-.navbar .menu li:hover .submenu__desplegable {
+.navbar .menu li:hover {
   visibility: visible;
   opacity: 1; }
 
@@ -375,18 +402,26 @@ body {
     width: 100%; }
 
 /*Pages*/
-.card__productos .titulo__coleccion {
+.card__productos .titulo__coleccion, .card__productos .titulo__coleccion--active {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 0px;
   margin-bottom: 70px;
   margin-top: 50px;
   font-family: "Raleway", sans-serif;
   font-size: 3.5em; }
+  .card__productos .titulo__coleccion--active {
+    color: #1d396e; }
 
 .card__productos .cardIndex {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 0px;
   margin-top: 15px; }
 
 .artesanos__card .artesanos {

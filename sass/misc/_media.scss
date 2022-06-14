@@ -181,7 +181,7 @@
             flex-direction: column;
             font-family: $font-principal;
             font-size: $text-xxSmall;
-            color: $text-color;
+            color: map-get($colors, text-color);
             margin: 50px;
 
             .footer__faqs {
@@ -198,7 +198,7 @@
 
             .footer__box {
                 text-decoration: none;
-                color: $primary;
+                color: map-get($colors, primary);
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
@@ -290,7 +290,7 @@
             flex-direction: column;
             font-family: $font-principal;
             font-size: $text-xxSmall;
-            color: $text-color;
+            color: map-get($colors, text-color);
             margin: 50px;
 
             .footer__faqs {
@@ -308,7 +308,7 @@
             .footer__box {
                 padding: 0px;
                 text-decoration: none;
-                color: $primary;
+                color: map-get($colors, primary);
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
@@ -367,7 +367,7 @@
             flex-direction: column;
             font-family: $font-principal;
             font-size: $text-xxSmall;
-            color: $text-color;
+            color: map-get($colors, text-color);
             margin: 50px;
 
             .footer__faqs {
@@ -411,17 +411,17 @@
     }
 
     .joyas:hover {
-        color: $text-hover;
+        color: map-get($colors, text-hover);
     }
 
     .joyas--bordes {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        border-bottom: 1px solid $text-color;
+        border-bottom: 1px solid map-get($colors, text-color);
         padding: 2px;
 
-        color: $text-color;
+        color: map-get($colors, text-color);
         margin: 10px;
         font-family: $font-principal;
         font-style: initial;
@@ -458,7 +458,7 @@
         display: flex;
         justify-content: center;
         flex-direction: row;
-        border: 0.5px solid $text-color;
+        border: 0.5px solid map-get($colors, text-color);
         letter-spacing: 2px;
         font-size: $text-base;
         font-family: $font-section;
@@ -477,7 +477,7 @@
         display: flex;
         justify-content: center;
         flex-direction: row;
-        border: 0.5px solid $text-color;
+        border: 0.5px solid map-get($colors, text-color);
         letter-spacing: 2px;
     }
 }
@@ -487,9 +487,9 @@
 @media screen and (max-width: 780px) {
     .redesSociales--texto {
         font-family: $font-principal;
-        color: $primary;
+        color: map-get($colors, primary);
         padding: 5px;
-        background: $secondary;
+        background: map-get($colors, secondary);
     }
 }
 
