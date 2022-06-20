@@ -1,20 +1,83 @@
-/*Media Query 1024px*/
+/*New In y Productos*/
+
 @media screen and (min-width:1024px) {
-    .card__productos {
-        .box__cardIndex {
+    .card-title {
+        font-size: $text-xxSmall;
+    }
 
-            .card-title {
-                font-size: $text-xxSmall;
-            }
+    .card-text {
+        font-size: $text-xxSmall;
+    }
 
-            .card-text {
-                font-size: $text-xxSmall;
-            }
-        }
+
+    .box__productos {
+        margin-bottom: 150px;
     }
 }
 
 
+@media screen and (min-width:780px) {
+    .card-title {
+        font-size: $text-xxSmall;
+    }
+
+    .card-text {
+        font-size: $text-xxSmall;
+    }
+
+
+    .box__productos {
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .card-title {
+        font-size: $text-xxSmall;
+    }
+
+    .card-text {
+        font-size: $text-xxSmall;
+    }
+
+
+    .box__productos {
+        margin-bottom: 290px;
+    }
+}
+
+@media screen and (min-width:480px) {
+    .card-title {
+        font-size: $text-xSmall;
+    }
+
+    .card-text {
+        font-size: $text-xSmall;
+    }
+
+
+    .box__productos {
+        margin-bottom: 350px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .card-title {
+        font-size: $text-xxSmall;
+    }
+
+    .card-text {
+        font-size: $text-xxSmall;
+    }
+
+
+    .box__productos {
+        margin-bottom: 400px;
+    }
+}
+
+
+/*HOME*/
 @media screen and (min-width: 1024px) {
     .card__productos {
         .artesanos__card {
@@ -50,9 +113,6 @@
 
 }
 
-/*Fin Media Query 1024px*/
-
-/*Media Query 768px*/
 
 @media screen and (min-width:768px) {
     .card__productos {
@@ -108,10 +168,6 @@
     }
 
 }
-
-/*Fin Media Query 780px*/
-
-/*Media Query 600px*/
 
 @media screen and (min-width:600px) {
     .card__productos {
@@ -172,47 +228,6 @@
 
 }
 
-
-@media screen and (max-width: 600px) {
-    .footer {
-
-        .footer__preguntas {
-            display: flex;
-            flex-direction: column;
-            font-family: $font-principal;
-            font-size: $text-xxSmall;
-            color: map-get($colors, text-color);
-            margin: 50px;
-
-            .footer__faqs {
-                margin: 8px;
-                display: flex;
-                justify-content: center;
-            }
-        }
-
-        .box {
-            display: flex;
-            flex-direction: row;
-            font-family: $font-principal;
-
-            .footer__box {
-                text-decoration: none;
-                color: map-get($colors, primary);
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                margin: 10px;
-                width: 100%;
-            }
-        }
-    }
-
-}
-
-/*Fin Media Query 600px*/
-
-/*Media Query 480px*/
 
 @media screen and (min-width:480px) {
     .card__productos {
@@ -282,47 +297,7 @@
 
 }
 
-@media screen and (max-width: 480px) {
-    .footer {
 
-        .footer__preguntas {
-            display: flex;
-            flex-direction: column;
-            font-family: $font-principal;
-            font-size: $text-xxSmall;
-            color: map-get($colors, text-color);
-            margin: 50px;
-
-            .footer__faqs {
-                margin: 8px;
-                display: flex;
-                justify-content: center;
-            }
-        }
-
-        .box {
-            display: flex;
-            flex-direction: row;
-            font-family: $font-principal;
-
-            .footer__box {
-                padding: 0px;
-                text-decoration: none;
-                color: map-get($colors, primary);
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                margin: 10px;
-                width: 100%;
-            }
-        }
-    }
-
-}
-
-/*Fin Media Query 480px*/
-
-/*Media query 320px*/
 
 @media screen and (max-width: 320px) {
     .artesanos__card {
@@ -338,7 +313,7 @@
             .artesanos__titulo {
                 grid-column: 1/2;
                 grid-row: 1;
-                font-size: $text-small;
+                font-size: $text-xSmall;
                 font-family: $font-secondary;
             }
 
@@ -358,47 +333,6 @@
         }
     }
 }
-
-
-@media screen and (max-width: 320px) {
-    .footer {
-
-        .footer__preguntas {
-            display: flex;
-            flex-direction: column;
-            font-family: $font-principal;
-            font-size: $text-xxSmall;
-            color: map-get($colors, text-color);
-            margin: 50px;
-
-            .footer__faqs {
-                margin: 8px;
-                display: flex;
-                justify-content: center;
-            }
-        }
-
-        .box {
-            display: flex;
-            flex-direction: row;
-            font-family: $font-principal;
-
-            .footer__box {
-                text-decoration: none;
-                display: flex;
-                border: none;
-                flex-direction: row;
-                justify-content: space-around;
-                margin: 10px;
-                width: 100%;
-            }
-        }
-    }
-
-}
-
-/*Fin Media Query 320px*/
-
 
 
 /*PRODUCTOS*/
@@ -438,63 +372,245 @@
     }
 
 
+    /*Inicio de Sesion y Registrarse*/
+
+    @media screen and (max-width: 320px) {
+
+        .bienvenido {
+            font-family: $font-secondary;
+            color: map-get($colors, text-textoSecundario);
+            color: map-get($colors , text-color);
+
+        }
+
+        .form-label {
+            font-family: $font-info;
+            font-size: $text-xSmall;
+            color: map-get($colors, text-sections);
+        }
+
+        .form-check-label {
+            font-family: $font-info;
+            font-size: $text-xxSmall;
+            color: map-get($colors, text-sections);
+        }
 
 
+        .registro {
+            text-decoration: none;
+            font-family: $font-info;
+            color: map-get($colors, text-sections);
+        }
+
+        .form__sexo {
+            font-family: $font-info;
+            color: map-get($colors, text-sections);
+        }
+
+    }
+
+
+    /*Redes sociales*/
+
+    @media screen and (max-width: 320px) {
+        .redesSociales {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+
+            .texto__redes {
+                color: map-get($colors, text-color);
+                font-family: $font-secondary;
+                font-size: $text-xSmall;
+                margin: 10px;
+            }
+        }
+
+        .redes__texto {
+            font-family: $font-principal;
+            font-size: $text-xxSmall;
+            color: map-get($colors , text-sections);
+
+        }
+    }
+
+    /*UBICACION*/
+
+    @media screen and (max-width: 1040px) {
+        .texto__ubicacion {
+            .texto__sucursales {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                font-size: $text-medium;
+                margin-bottom: 40px;
+                font-family: $font-section;
+            }
+        }
+
+        .sucursales {
+
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+
+            .sucursales__ubicacion {
+
+                letter-spacing: 2px;
+                font-size: $text-xxSmall;
+                font-family: $font-principal;
+                font-style: initial;
+
+            }
+        }
+    }
 }
 
+@media screen and (max-width: 320px) {
+    .texto__ubicacion {
+        .texto__sucursales {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            font-size: $text-medium;
+            margin-bottom: 40px;
+            font-family: $font-section;
+        }
+    }
 
-/*UBICACION*/
-
-@media screen and (max-width: 790px) {
     .sucursales {
+
         display: flex;
         justify-content: center;
-        align-content: center;
-        font-size: $text-medium;
-        margin-bottom: 40px;
-        font-family: $font-section;
+        flex-direction: column;
+
+        .sucursales__ubicacion {
+            font-size: $text-xxSmall;
+            font-family: $font-principal;
+            font-style: initial;
+
+        }
     }
 
-    .sucursales__ubicacion--bordes {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        border: 0.5px solid map-get($colors, text-color);
-        letter-spacing: 2px;
-        font-size: $text-base;
-        font-family: $font-section;
-    }
 }
+
+
+
+/*Footer*/
+
+@media screen and (max-width: 600px) {
+    .footer {
+
+        .footer__preguntas {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-principal;
+            font-size: $text-xxSmall;
+            color: map-get($colors, text-color);
+            margin: 50px;
+
+            .footer__faqs {
+                margin: 8px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            font-family: $font-principal;
+
+            .footer__box {
+                text-decoration: none;
+                color: map-get($colors, text-color);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
 
 @media screen and (max-width: 480px) {
-    .sucursales {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-bottom: 40px;
+    .footer {
+
+        .footer__preguntas {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-principal;
+            font-size: $text-xxSmall;
+            color: map-get($colors, text-color);
+            margin: 50px;
+
+            .footer__faqs {
+                margin: 8px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            font-family: $font-principal;
+
+            .footer__box {
+                padding: 0px;
+                text-decoration: none;
+                color: map-get($colors, text-color);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 10px;
+                width: 100%;
+            }
+        }
     }
 
-    .sucursales__ubicacion--bordes {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        border: 0.5px solid map-get($colors, text-color);
-        letter-spacing: 2px;
-    }
 }
 
-/*REDES SOCIALES*/
 
-@media screen and (max-width: 780px) {
-    .redesSociales--texto {
-        font-family: $font-principal;
-        color: map-get($colors, primary);
-        padding: 5px;
-        background: map-get($colors, secondary);
+@media screen and (max-width: 320px) {
+    .footer {
+
+        .footer__preguntas {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-principal;
+            font-size: $text-xxSmall;
+            color: map-get($colors, text-color);
+            margin: 50px;
+
+            .footer__faqs {
+                margin: 8px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            font-family: $font-principal;
+
+            .footer__box {
+                text-decoration: none;
+                display: flex;
+                border: none;
+                flex-direction: row;
+                justify-content: center;
+                margin: 10px;
+                width: 100%;
+                font-size: $text-xxxSmall;
+                color: map-get($colors, text-color);
+            }
+        }
     }
+
 }
-
-/*FIN REDES SOCIALES*/
-
-
-

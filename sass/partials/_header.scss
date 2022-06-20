@@ -6,9 +6,9 @@
             letter-spacing: 3px;
             font-size: $text-large;
             font-family: $font-secondary;
-            color:map-get($colors, secondary);
+            color: map-get($colors, secondary);
         }
-    } 
+    }
 
     .menuNavegacion {
         margin-right: 95px;
@@ -28,41 +28,41 @@
         }
 
 
-        li:hover {       
-                visibility: visible;
-                opacity: 1;
+        li:hover {
+            visibility: visible;
+            opacity: 1;
 
-             }
-
-            .submenu__desplegable{
-                position: absolute;
-                background: map-get($colors, text-submenu);
-                border: none;
-                width: 150px;
-                visibility: hidden;
-                opacity: 0;
-                transition: opacity 1.5s;
-            }
-        }
-      
-        .barra__submenu {
-
-            .enlace__submenu {
-                display: block;
-                padding: 15px;
-                color: map-get($colors, text-sections);
-                font-family: $font-principal;
-                text-decoration: none;
-            }
         }
 
-        .botones__barraNavegacion {
-            text-decoration: none;
-            color:map-get($colors, text-color);
+        .submenu__desplegable {
+            position: absolute;
+            background: map-get($colors, text-submenu);
+            border: none;
+            width: 150px;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 1.5s;
         }
-
-        .botones__barraNavegacion:hover {
-            color: map-get($colors, primary);
-        }
-
     }
+
+    .barra__submenu {
+
+        .enlace__submenu {
+            display: block;
+            padding: 15px;
+            color: map-get($colors, text-sections);
+            font-family: $font-principal;
+            text-decoration: none;
+        }
+    }
+
+    .botones__barraNavegacion {
+        text-decoration: none;
+        color: map-get($colors, text-color);
+    }
+
+    .botones__barraNavegacion:hover {
+        color: map-get($colors, primary);
+    }
+
+}

@@ -22,6 +22,51 @@
 
 }
 
+
+.card-title {
+    font-family: $font-principal;
+    font-size: $text-medium;
+}
+
+.card-title:hover {
+    color: map-get($colors, hover );
+}
+
+.card-text {
+    font-family: $font-principal;
+    color: $font-section;
+    font-size: $text-small;
+}
+
+.card {
+    box-shadow: 5px 5px 5px var(--shadow);
+}
+
+.imgContainer {
+    height: 400px;
+    position: relative;
+
+}
+
+.estilo {
+    .imgContainer {
+        img {
+            width: 100%;
+            transition: all 25sg;
+            box-shadow: 5px 5px 5px map-get($colors , shadow);
+        }
+    }
+}
+
+.estilo:hover {
+    .imgContainer {
+        img {
+            transform: scale(1.06)
+        }
+    }
+}
+
+
 .artesanos__card {
 
     .artesanos {
@@ -31,7 +76,7 @@
         gap: 10px;
         margin-top: 20px;
 
-        &__titulo {
+        &__titulo { 
             display: flex;
             justify-content: center;
             grid-column: 1/2;

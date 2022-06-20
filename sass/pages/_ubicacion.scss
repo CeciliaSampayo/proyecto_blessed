@@ -1,0 +1,31 @@
+.texto__sucursales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 11px;
+    font-size: $text-large;
+    color: map-get($colors, text-color );
+    font-family: $font-principal;
+}
+
+.sucursales{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    .sucursales__ubicacion{ 
+    border-bottom: 1px solid map-get($colors, text-color);
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-family: $font-principal;
+    font-style: initial;
+}
+}
+
+.ubicacion__mapa {
+    width: 100%;
+    height: 400px;
+}

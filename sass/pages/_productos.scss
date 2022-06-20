@@ -1,0 +1,80 @@
+.joyas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px;
+    font-size: $text-large;
+    color: map-get($colors , text-color);
+    font-family: $font-secondary;
+}
+
+.joyas__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    .joyas:hover {
+        color: map-get($colors , text-hover);
+    }
+
+    .joyas__info {
+        display: inline-flex;
+        flex-direction: row;
+        border-bottom: 1px solid map-get($colors , text-color);
+        padding: 10px;
+        color: map-get($colors , text-color);
+        margin: 30px;
+        font-family: $font-principal;
+        font-style: initial;
+    }
+}
+
+
+.card-title {
+    font-family: $font-principal;
+     font-size: $text-medium;
+     font-size: $text-small;
+}
+
+.card-title:hover {
+    color: map-get($colors, hover );
+}
+
+.card-text {
+    font-family: $font-principal;
+    color: $font-section;
+}
+
+.card {
+    box-shadow: 5px 5px 5px var(--shadow);
+}
+
+.imgContainer {
+    height: 400px;
+    position: relative;
+
+}
+
+.estilo {
+    .imgContainer {
+        img {
+            width: 100%;
+            transition: all 25sg;
+            box-shadow: 5px 5px 5px map-get($colors , shadow);
+        }
+    }
+}
+
+.estilo:hover {
+    .imgContainer {
+        img {
+            transform: scale(1.06)
+        }
+    }
+}
+
+
+.box__productos {
+    margin-bottom: 280px;
+}

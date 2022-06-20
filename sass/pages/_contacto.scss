@@ -1,0 +1,10 @@
+.contactoTitulo{
+    font-family: $font-title;
+    font-size: $text-medium;
+}
+
+.contacto{
+    font-family: $font-principal;
+    font-size: $text-xSmall;
+    color: map-get($colors, text-color);
+}

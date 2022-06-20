@@ -7,14 +7,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
 
 
-/*Misc*/ 
+/*Misc*/
 
 @import "./misc/variables";
 @import "./misc/mixins";
 @import "./misc/normalize";
-@import "./misc/media";
 
-/*Partials*/ 
+
+/*Partials*/
 
 @import "./partials/header";
 @import "./partials/footer";
@@ -27,3 +27,7 @@
 @import "./pages/newIn";
 @import "./pages/productos";
 @import "./pages/ubicacion";
+@import "./pages/redesSociales";
+
+/* MediaQ*/
+@import "./misc/media";

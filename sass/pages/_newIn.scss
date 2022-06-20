@@ -1,0 +1,49 @@
+.texto__newIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-principal;
+    margin-bottom: 20px;
+}
+.card-title {
+    font-family: $font-principal;
+    font-size: $text-medium;
+}
+
+.card-title:hover {
+    color: map-get($colors , text-hover);
+}
+
+.card-text {
+    font-family: $font-principal;
+    color: $font-section;
+    font-size: $text-small;
+}
+
+.card {
+    box-shadow: 5px 5px 5px map-get($colors , shadow );
+}
+
+.estilo {
+    .imgContainer {
+        img {
+            width: 100%;
+            transition: all 25sg;
+            box-shadow: 5px 5px 5px map-get($colors , shadow );
+        }
+    }
+}
+
+.imgContainer {
+    height: 400px;
+    position: relative;
+
+}
+
+.estilo:hover {
+    .imgContainer {
+        img {
+            transform: scale(1.06)
+        }
+    }
+}

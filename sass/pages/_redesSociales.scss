@@ -1,0 +1,29 @@
+.redesSociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+.texto__redes{
+    color: map-get($colors, text-color);
+    font-family: $font-secondary;
+    margin: 10px;
+}
+}
+
+.redesSociales__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+
+    .redes__logo1{
+        margin-left: 20px;
+    }
+
+.redes__texto {
+    color: map-get($colors, text-color );
+    font-size: $text-xSmall;
+    font-family: $font-principal;
+}
+}

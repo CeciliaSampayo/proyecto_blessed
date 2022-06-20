@@ -12,12 +12,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/translated.css">
     <title>Blessed Joyas- Ubicacion</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="container">
         <section class="row">
             <nav class="navbar navbar-expand-lg">
 
@@ -71,14 +72,17 @@
 
     </header>
 
-    <main>
 
-        <h2 class="sucursales">Sucursales</h2>
+    <main class="container">
 
-        <section class="sucursales__ubicacion">
-            <p class="sucursales__ubicacion--bordes">Belgrano, Av. Cabildo 1773 </p>
-            <p class="sucursales__ubicacion--bordes">Lanus Oeste, Av San Martin 587</p>
-            <p class="sucursales__ubicacion--bordes">San Fernando,Constitucion 499</p>
+        <section class="texto__ubicacion">
+            <h1 class="texto__sucursales">Sucursales</h1>
+        </section>
+
+        <section class="sucursales">
+            <p class="sucursales__ubicacion">Belgrano, Av. Cabildo 1773 </p>
+            <p class="sucursales__ubicacion">Lanus Oeste, Av San Martin 587</p>
+            <p class="sucursales__ubicacion">San Fernando,Constitucion 499</p>
         </section>
 
         <iframe class="ubicacion__mapa"
@@ -87,25 +91,27 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
 
-    <footer>
+    <footer class="container">
 
-        <section class="footer__preguntas">
-            <h4 class="footer__faqs">Ayuda</h4>
-            <p class="footer__faqs">Preguntas Frecuentes</p>
-            <p class="footer__faqs">Segui tu envio</p>
-            <p class="footer__faqs">Medios de pago</p>
-            <p class="footer__faqs">Problemas con mi compra</p>
+        <section class="footer">
+            <section class="footer__preguntas">
+                <h4 class="footer__faqs">Ayuda</h4>
+                <p class="footer__faqs">Preguntas Frecuentes</p>
+                <p class="footer__faqs">Segui tu envio</p>
+                <p class="footer__faqs">Medios de pago</p>
+                <p class="footer__faqs">Problemas con mi compra</p>
+            </section>
+
+            <div class="box">
+                <a class="footer__box" href="../pages/contacto.html">Contacto</a>
+                <a class="footer__box" href="../pages/redesSociales.html">Redes Sociales</a>
+                <a class="footer__box" href="./ubicacion.html">Ubicacion</a>
+            </div>
         </section>
-
-        <div class="caja">
-            <a class="footer__caja" href="./contacto.html">Contacto</a>
-            <a class="footer__caja" href="./redesSociales.html">Redes Sociales</a>
-            <a class="footer__caja" href="./ubicacion.html">Ubicacion</a>
-        </div>
-
         </section>
 
     </footer>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

@@ -1,0 +1,28 @@
+
+.bienvenido{
+    font-family: $font-secondary;
+    color: map-get($colors,text-textoSecundario);
+    
+}
+.form-label{ 
+    font-family: $font-info;
+    font-size: $text-xSmall;
+    color: map-get($colors, text-sections );
+}
+
+.form-check-label{
+    font-family: $font-info;
+    font-size: $text-xxSmall;
+    color: map-get($colors, text-sections);
+}
+
+.registro{
+    text-decoration: none;
+    font-family: $font-info;
+    color: map-get($colors, text-sections);
+}
+
+.form__sexo{
+    font-family:  $font-info;
+    color: map-get($colors, text-sections);
+}
