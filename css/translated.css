@@ -67,7 +67,7 @@ body {
   align-items: center;
   font-family: "Ubuntu", sans-serif; }
 
-.navbar .menu li:hover {
+.navbar .menu li:hover .submenu__desplegable  {
   visibility: visible;
   opacity: 1; }
 
