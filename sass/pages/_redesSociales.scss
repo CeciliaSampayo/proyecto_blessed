@@ -17,13 +17,26 @@
     justify-content: center;
     margin-top: 50px;
 
+    .redes__logo{
+        margin-left: 30px;
+    }
+
     .redes__logo1{
-        margin-left: 20px;
+        margin-left: 37px;
     }
 
 .redes__texto {
     color: map-get($colors, text-color );
-    font-size: $text-xSmall;
+    font-size: $text-small;
     font-family: $font-principal;
+    margin-right: 40px;
+}
+
+.redes__texto:hover{
+    color:rgb(99, 156, 156);
+
+}
+.redes__enlace{
+    text-decoration: none;
 }
 }

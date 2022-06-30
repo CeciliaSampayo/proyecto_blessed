@@ -325,12 +325,19 @@ body {
   flex-direction: row;
   justify-content: center;
   margin-top: 50px; }
+  .redesSociales__logo .redes__logo {
+    margin-left: 30px; }
   .redesSociales__logo .redes__logo1 {
-    margin-left: 20px; }
+    margin-left: 37px; }
   .redesSociales__logo .redes__texto {
     color: #000000;
-    font-size: 1.2em;
-    font-family: "Ubuntu", sans-serif; }
+    font-size: 1.5em;
+    font-family: "Ubuntu", sans-serif;
+    margin-right: 40px; }
+  .redesSociales__logo .redes__texto:hover {
+    color: #639c9c; }
+  .redesSociales__logo .redes__enlace {
+    text-decoration: none; }
 
 /* MediaQ*/
 /*New In y Productos*/
@@ -474,7 +481,7 @@ body {
       font-family: "Ubuntu", sans-serif;
       font-style: initial;
       font-size: 0.7em; }
-  /*Inicio de Sesion y Registrarse*/ }
+  /*INICIO DE SESION Y REGISTRARSE*/ }
 
 @media screen and (min-width: 320px) and (max-width: 320px) {
   .bienvenido {
@@ -498,7 +505,7 @@ body {
     color: #423f3fc7; } }
 
 @media screen and (min-width: 320px) {
-  /*Redes sociales*/ }
+  /*REDES SOCIALES*/ }
 
 @media screen and (min-width: 320px) and (max-width: 320px) {
   .redesSociales {
@@ -553,7 +560,7 @@ body {
       font-family: "Ubuntu", sans-serif;
       font-style: initial; } }
 
-/*Footer*/
+/*FOOTER*/
 @media screen and (max-width: 600px) {
   .footer .footer__preguntas {
     display: flex;
