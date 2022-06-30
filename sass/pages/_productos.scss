@@ -1,63 +1,67 @@
-.joyas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 25px;
-    font-size: $text-large;
-    color: map-get($colors , text-color);
-    font-family: $font-secondary;
-}
-
-.joyas__link {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-
-    .joyas:hover {
-        color: map-get($colors , text-hover);
-    }
-
-    .joyas__info {
-        display: inline-flex;
+.joyas__box {
+    .joyas {
+        display: flex;
         flex-direction: row;
-        border-bottom: 1px solid map-get($colors , text-color);
-        padding: 10px;
+        justify-content: center;
+        margin: 25px;
+        font-size: $text-large;
         color: map-get($colors , text-color);
-        margin: 30px;
-        font-family: $font-principal;
-        font-style: initial;
+        font-family: $font-secondary;
+    }
+
+    .joyas:hover{ 
+        color: map-get($colors, text-hover );
+    }
+
+    .joyas__link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        .joyas__info {
+            display: inline-flex;
+            flex-direction: row;
+            border-bottom: 1px solid map-get($colors , text-color);
+            padding: 10px;
+            color: map-get($colors , text-color);
+            margin: 3px;
+            font-family: $font-principal;
+            font-style: initial;
+            font-size: $text-xxSmall;
+        }
+
+        .joyas__info:hover{
+            color: rgb(121, 121, 172);
+            border-bottom: 1px solid rgb(93, 93, 109) ;
+        }
     }
 }
 
 
-.card-title {
-    font-family: $font-principal;
-     font-size: $text-medium;
-     font-size: $text-small;
-}
+.card-body {
+    .card-title {
+        font-family: $font-principal;
+        font-size: $text-small;
+    }
 
-.card-title:hover {
-    color: map-get($colors, hover );
-}
+    .card-title:hover {
+        color: map-get($colors, hover);
+    }
 
-.card-text {
-    font-family: $font-principal;
-    color: $font-section;
-}
+    .card-text {
+        font-family: $font-principal;
+        color: $font-section;
+        font-size: $text-xxSmall;
+    }
 
-.card {
-    box-shadow: 5px 5px 5px var(--shadow);
-}
-
-.imgContainer {
-    height: 400px;
-    position: relative;
-
+    .card {
+        box-shadow: 5px 5px 5px var(--shadow);
+    }
 }
 
 .estilo {
-    .imgContainer {
+    .img__container {
         img {
             width: 100%;
             transition: all 25sg;
@@ -67,14 +71,9 @@
 }
 
 .estilo:hover {
-    .imgContainer {
+    .img__container {
         img {
             transform: scale(1.06)
         }
     }
-}
-
-
-.box__productos {
-    margin-bottom: 280px;
 }

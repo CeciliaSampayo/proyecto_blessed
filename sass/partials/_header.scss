@@ -8,6 +8,11 @@
             font-family: $font-secondary;
             color: map-get($colors, secondary);
         }
+
+        .button__nav{
+            display: flex;
+            align-items: center;
+        }
     }
 
     .menuNavegacion {
@@ -17,44 +22,11 @@
             color: map-get($colors, text-textoSecundario);
             font-family: $font-principal;
         }
+
     }
 
-    .menu {
-        .dropdown-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: $font-principal;
-        }
 
 
-        li:hover {
-            visibility: visible;
-            opacity: 1;
-
-        }
-
-        .submenu__desplegable {
-            position: absolute;
-            background: map-get($colors, text-submenu);
-            border: none;
-            width: 150px;
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 1.5s;
-        }
-    }
-
-    .barra__submenu {
-
-        .enlace__submenu {
-            display: block;
-            padding: 15px;
-            color: map-get($colors, text-sections);
-            font-family: $font-principal;
-            text-decoration: none;
-        }
-    }
 
     .botones__barraNavegacion {
         text-decoration: none;

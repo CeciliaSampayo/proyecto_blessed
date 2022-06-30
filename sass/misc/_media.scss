@@ -1,6 +1,17 @@
 /*New In y Productos*/
 
-@media screen and (min-width:1024px) {
+@media screen and (max-width:1024px) {
+    .card-title {
+        font-size: $text-xSmall;
+    }
+
+    .card-text {
+        font-size: $text-xSmall;
+    }
+}
+
+
+@media screen and (max-width:780px) {
     .card-title {
         font-size: $text-xxSmall;
     }
@@ -9,44 +20,19 @@
         font-size: $text-xxSmall;
     }
 
-
-    .box__productos {
-        margin-bottom: 150px;
-    }
 }
 
-
-@media screen and (min-width:780px) {
+@media screen and (max-width:600px) {
     .card-title {
-        font-size: $text-xxSmall;
+        font-size: $text-xSmall;
     }
 
     .card-text {
-        font-size: $text-xxSmall;
-    }
-
-
-    .box__productos {
-        margin-bottom: 150px;
+        font-size: $text-xSmall;
     }
 }
 
-@media screen and (min-width:600px) {
-    .card-title {
-        font-size: $text-xxSmall;
-    }
-
-    .card-text {
-        font-size: $text-xxSmall;
-    }
-
-
-    .box__productos {
-        margin-bottom: 290px;
-    }
-}
-
-@media screen and (min-width:480px) {
+@media screen and (max-width:480px) {
     .card-title {
         font-size: $text-xSmall;
     }
@@ -55,10 +41,6 @@
         font-size: $text-xSmall;
     }
 
-
-    .box__productos {
-        margin-bottom: 350px;
-    }
 }
 
 @media screen and (max-width:320px) {
@@ -70,17 +52,53 @@
         font-size: $text-xxSmall;
     }
 
-
-    .box__productos {
-        margin-bottom: 400px;
-    }
 }
 
 
 /*HOME*/
-@media screen and (min-width: 1024px) {
-    .card__productos {
+@media screen and (max-width: 1024px) {
+    .box__artesanos {
         .artesanos__card {
+            
+            .artesanos {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+
+                .artesanos__titulo {
+
+                    font-size: $text-medium;
+                    font-family: $font-secondary;
+                }
+
+                .artesanos__parrafo {
+                    margin-top: 10px;
+                    font-size: $text-xSmall;
+                    font-family: $font-secondary;
+                }
+
+                .artesanos__imagen {
+
+                    width: 50%;
+
+                }
+            }
+
+        }
+
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .box__artesanos {
+        .artesanos__card {
+            margin-top: 50px;
+
             .artesanos {
                 display: flex;
                 justify-content: center;
@@ -109,34 +127,16 @@
             }
 
         }
-    }
-
-}
 
 
-@media screen and (min-width:768px) {
-    .card__productos {
-        .box__cardIndex {
-
-            .card-title {
-                font-size: $text-xxSmall;
-            }
-
-            .card-text {
-                font-size: $text-xxxSmall;
-            }
-
-            .card-footer {
-                font-size: $text-xxxSmall;
-            }
-        }
     }
 }
 
-
-@media screen and (min-width: 768px) {
-    .card__productos {
+@media screen and (max-width: 600px) {
+    .box__artesanos {
         .artesanos__card {
+            margin-top: 50px;
+
             .artesanos {
                 display: flex;
                 justify-content: center;
@@ -146,56 +146,33 @@
                 padding: 0;
 
                 .artesanos__titulo {
-
-                    font-size: $text-medium;
+                    font-size: $text-small;
                     font-family: $font-secondary;
                 }
 
                 .artesanos__parrafo {
-
                     font-size: $text-xSmall;
                     font-family: $font-secondary;
                 }
 
                 .artesanos__imagen {
-
                     width: 50%;
 
                 }
             }
 
         }
-    }
 
-}
 
-@media screen and (min-width:600px) {
-    .card__productos {
-        .box__cardIndex {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .card-title {
-                font-size: $text-xxSmall;
-            }
-
-            .card-text {
-                font-size: $text-xxxSmall;
-            }
-
-            .card-footer {
-                font-size: $text-xxxSmall;
-            }
-        }
     }
 }
 
 
-@media screen and (min-width: 600px) {
-    .card__productos {
+@media screen and (max-width: 480px) {
+    .box__artesanos {
         .artesanos__card {
+            margin-top: 50px;
+
             .artesanos {
                 display: flex;
                 justify-content: center;
@@ -205,171 +182,85 @@
                 padding: 0;
 
                 .artesanos__titulo {
-
-                    font-size: $text-medium;
-                    font-family: $font-secondary;
-                }
-
-                .artesanos__parrafo {
-
                     font-size: $text-xSmall;
                     font-family: $font-secondary;
                 }
 
-                .artesanos__imagen {
+                .artesanos__parrafo {
+                    font-size: $text-xxSmall;
+                    font-family: $font-secondary;
 
+                }
+
+                .artesanos__imagen {
                     width: 50%;
 
                 }
             }
 
         }
+
+
     }
 
 }
-
-
-@media screen and (min-width:480px) {
-    .card__productos {
-
-        .box__cardIndex {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-
-
-            .imgContainer {
-                height: 400px;
-                position: relative;
-
-            }
-
-        }
-    }
-
-    .card-title {
-        font-size: $text-xxSmall;
-    }
-
-    .card-text {
-        font-size: $text-xxxSmall;
-    }
-
-    .card-footer {
-        font-size: $text-xxxSmall;
-    }
-}
-
-@media screen and (min-width: 480px) {
-    .card__productos {
-        .artesanos__card {
-            .artesanos {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-
-                .artesanos__titulo {
-
-                    font-size: $text-medium;
-                    font-family: $font-secondary;
-                }
-
-                .artesanos__parrafo {
-
-                    font-size: $text-xSmall;
-                    font-family: $font-secondary;
-                }
-
-                .artesanos__imagen {
-
-                    width: 50%;
-
-                }
-            }
-
-        }
-    }
-
-}
-
-
 
 @media screen and (max-width: 320px) {
-    .artesanos__card {
+    .box__artesanos {
+        .artesanos__card {
+            .artesanos {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
 
-        .artesanos {
+                .artesanos__titulo {
+                    font-size: $text-small;
+                    font-family: $font-secondary;
+                }
 
-            display: grid;
-            grid-template-columns: 1fr, 2rf, 1fr;
-            grid-template-rows: 1fr repeat(3, 150px);
-            gap: 10px;
-            padding: 30px;
+                .artesanos__parrafo {
+                    font-size: $text-xxSmall;
+                    font-family: $font-secondary;
 
-            .artesanos__titulo {
-                grid-column: 1/2;
-                grid-row: 1;
-                font-size: $text-xSmall;
-                font-family: $font-secondary;
-            }
+                }
 
-            .artesanos__parrafo {
-                grid-column: 1/3;
-                grid-row: 2/3;
-                font-size: $text-xxSmall;
-                font-family: $font-secondary;
-            }
-
-            .artesanos__imagen {
-
-                grid-column: 1/3;
-                grid-row: 4;
 
             }
         }
     }
 }
-
 
 /*PRODUCTOS*/
 
 @media screen and (min-width: 320px) {
 
     .joyas__link {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .joyas:hover {
-        color: map-get($colors, text-hover);
-    }
-
-    .joyas--bordes {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        border-bottom: 1px solid map-get($colors, text-color);
-        padding: 2px;
-
-        color: map-get($colors, text-color);
-        margin: 10px;
-        font-family: $font-principal;
-        font-style: initial;
         font-size: $text-xSmall;
-    }
-
-    .box__productos {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
 
+
+        .joyas:hover {
+            color: map-get($colors, text-hover);
+        }
+
+        .joyas__info {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border-bottom: 1px solid map-get($colors, text-color);
+            padding: 2px;
+            color: map-get($colors, text-color);
+            font-family: $font-principal;
+            font-style: initial;
+            font-size: $text-xxxSmall;
+        }
     }
+
 
 
     /*Inicio de Sesion y Registrarse*/
@@ -563,12 +454,14 @@
             .footer__box {
                 padding: 0px;
                 text-decoration: none;
+                border: none;
                 color: map-get($colors, text-color);
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 margin: 10px;
                 width: 100%;
+                font-size: $text-xxSmall;
             }
         }
     }

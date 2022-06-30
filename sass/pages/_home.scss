@@ -1,27 +1,35 @@
 .card__productos {
 
-    .titulo__coleccion {
-        width: 100%;
-        @include flex(row,center,center,0px);
-        margin-bottom: 70px;
-        margin-top: 50px;
-        font-family: $font-secondary;
-        font-size: $text-large;
-        &--active{
-            @extend .titulo__coleccion;
-                color: rgb(29, 57, 110);
-            
+    .titulo__box {
+        .titulo__coleccion {
+            width: 100%;
+            @include flex(row, center, center, 0px);
+            margin-bottom: 70px;
+            margin-top: 50px;
+            font-family: $font-secondary;
+            font-size: $text-large;
 
+            &--active {
+                @extend .titulo__coleccion;
+                color: rgb(29, 57, 110);
+
+
+            }
         }
     }
 
     .cardIndex {
-        @include flex(row,center,center,0px);
+        @include flex(row, center, center, 0px);
         margin-top: 15px;
     }
 
 }
 
+.box__index {
+    display: flex;
+    justify-content: center;
+
+}
 
 .card-title {
     font-family: $font-principal;
@@ -29,7 +37,7 @@
 }
 
 .card-title:hover {
-    color: map-get($colors, hover );
+    color: map-get($colors, hover);
 }
 
 .card-text {
@@ -66,39 +74,32 @@
     }
 }
 
+.box__artesanos {
+    .artesanos__card {
+        margin-top: 50px;
 
-.artesanos__card {
-
-    .artesanos {
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        grid-template-rows: repeat(3 200px);
-        gap: 10px;
-        margin-top: 20px;
-
-        &__titulo { 
+        .artesanos {
             display: flex;
             justify-content: center;
-            grid-column: 1/2;
-            grid-row: 1;
-            font-size: $text-extraLarge;
-            font-family: $font-secondary;
-        }
+            flex-direction: column;
+            align-items: center;
 
-        &__parrafo {
-            display: flex;
-            justify-content: center;
-            grid-column: 1;
-            grid-row: 2/3;
-            font-size: $text-large;
-            font-family: $font-secondary;
-        }
+            &__titulo {
+                font-size: $text-large;
+                font-family: $font-secondary;
+            }
 
-        &__imagen {
-            grid-column: 2;
-            grid-row: 2;
-            width: 100%;
-        }
+            &__parrafo {
+                margin-top: 10px;
+                font-size: $text-small;
+                font-family: $font-secondary;
+            }
 
+            &__imagen {
+                margin-top: 10px;
+                width: 50%;
+            }
+
+        }
     }
-} 
+}

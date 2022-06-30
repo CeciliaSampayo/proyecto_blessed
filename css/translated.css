@@ -55,37 +55,15 @@ body {
   font-family: "Raleway", sans-serif;
   color: #000000ee; }
 
+.navbar .container-fluid .button__nav {
+  display: flex;
+  align-items: center; }
+
 .navbar .menuNavegacion {
   margin-right: 95px; }
   .navbar .menuNavegacion .nav-link {
     color: #292727;
     font-family: "Ubuntu", sans-serif; }
-
-.navbar .menu .dropdown-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Ubuntu", sans-serif; }
-
-.navbar .menu li:hover .submenu__desplegable  {
-  visibility: visible;
-  opacity: 1; }
-
-.navbar .menu .submenu__desplegable {
-  position: absolute;
-  background: #e7e7e7a4;
-  border: none;
-  width: 150px;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1.5s; }
-
-.navbar .barra__submenu .enlace__submenu {
-  display: block;
-  padding: 15px;
-  color: #423f3fc7;
-  font-family: "Ubuntu", sans-serif;
-  text-decoration: none; }
 
 .navbar .botones__barraNavegacion {
   text-decoration: none;
@@ -129,7 +107,7 @@ body {
   font-size: 1.2em;
   color: #000000; }
 
-.card__productos .titulo__coleccion, .card__productos .titulo__coleccion--active {
+.card__productos .titulo__box .titulo__coleccion, .card__productos .titulo__box .titulo__coleccion--active {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -140,7 +118,7 @@ body {
   margin-top: 50px;
   font-family: "Raleway", sans-serif;
   font-size: 3.5em; }
-  .card__productos .titulo__coleccion--active {
+  .card__productos .titulo__box .titulo__coleccion--active {
     color: #1d396e; }
 
 .card__productos .cardIndex {
@@ -150,6 +128,10 @@ body {
   align-items: center;
   gap: 0px;
   margin-top: 15px; }
+
+.box__index {
+  display: flex;
+  justify-content: center; }
 
 .card-title {
   font-family: "Ubuntu", sans-serif;
@@ -175,30 +157,23 @@ body {
 .estilo:hover .imgContainer img {
   transform: scale(1.06); }
 
-.artesanos__card .artesanos {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(3 200px);
-  gap: 10px;
-  margin-top: 20px; }
-  .artesanos__card .artesanos__titulo {
+.box__artesanos .artesanos__card {
+  margin-top: 50px; }
+  .box__artesanos .artesanos__card .artesanos {
     display: flex;
     justify-content: center;
-    grid-column: 1/2;
-    grid-row: 1;
-    font-size: 7.5em;
-    font-family: "Raleway", sans-serif; }
-  .artesanos__card .artesanos__parrafo {
-    display: flex;
-    justify-content: center;
-    grid-column: 1;
-    grid-row: 2/3;
-    font-size: 3.5em;
-    font-family: "Raleway", sans-serif; }
-  .artesanos__card .artesanos__imagen {
-    grid-column: 2;
-    grid-row: 2;
-    width: 100%; }
+    flex-direction: column;
+    align-items: center; }
+    .box__artesanos .artesanos__card .artesanos__titulo {
+      font-size: 3.5em;
+      font-family: "Raleway", sans-serif; }
+    .box__artesanos .artesanos__card .artesanos__parrafo {
+      margin-top: 10px;
+      font-size: 1.5em;
+      font-family: "Raleway", sans-serif; }
+    .box__artesanos .artesanos__card .artesanos__imagen {
+      margin-top: 10px;
+      width: 50%; }
 
 .bienvenido {
   font-family: "Raleway", sans-serif;
@@ -230,6 +205,9 @@ body {
   font-family: "Ubuntu", sans-serif;
   margin-bottom: 20px; }
 
+.texto__newIn:hover {
+  color: #488888b2; }
+
 .card-title {
   font-family: "Ubuntu", sans-serif;
   font-size: 2em; }
@@ -257,7 +235,7 @@ body {
 .estilo:hover .imgContainer img {
   transform: scale(1.06); }
 
-.joyas {
+.joyas__box .joyas {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -266,48 +244,46 @@ body {
   color: #000000;
   font-family: "Raleway", sans-serif; }
 
-.joyas__link {
+.joyas__box .joyas:hover {
+  color: #488888b2; }
+
+.joyas__box .joyas__link {
   display: flex;
   flex-direction: row;
   justify-content: center; }
-  .joyas__link .joyas:hover {
-    color: #488888b2; }
-  .joyas__link .joyas__info {
+  .joyas__box .joyas__link .joyas__info {
     display: inline-flex;
     flex-direction: row;
     border-bottom: 1px solid #000000;
     padding: 10px;
     color: #000000;
-    margin: 30px;
+    margin: 3px;
     font-family: "Ubuntu", sans-serif;
-    font-style: initial; }
+    font-style: initial;
+    font-size: 0.9em; }
+  .joyas__box .joyas__link .joyas__info:hover {
+    color: #7979ac;
+    border-bottom: 1px solid #5d5d6d; }
 
-.card-title {
+.card-body .card-title {
   font-family: "Ubuntu", sans-serif;
-  font-size: 2em;
   font-size: 1.5em; }
 
-.card-text {
+.card-body .card-text {
   font-family: "Ubuntu", sans-serif;
-  color: "Fira Sans", sans-serif; }
+  color: "Fira Sans", sans-serif;
+  font-size: 0.9em; }
 
-.card {
+.card-body .card {
   box-shadow: 5px 5px 5px var(--shadow); }
 
-.imgContainer {
-  height: 400px;
-  position: relative; }
-
-.estilo .imgContainer img {
+.estilo .img__container img {
   width: 100%;
   transition: all 25sg;
   box-shadow: 5px 5px 5px #00000027; }
 
-.estilo:hover .imgContainer img {
+.estilo:hover .img__container img {
   transform: scale(1.06); }
-
-.box__productos {
-  margin-bottom: 280px; }
 
 .texto__sucursales {
   display: flex;
@@ -358,196 +334,146 @@ body {
 
 /* MediaQ*/
 /*New In y Productos*/
-@media screen and (min-width: 1024px) {
-  .card-title {
-    font-size: 0.9em; }
-  .card-text {
-    font-size: 0.9em; }
-  .box__productos {
-    margin-bottom: 150px; } }
-
-@media screen and (min-width: 780px) {
-  .card-title {
-    font-size: 0.9em; }
-  .card-text {
-    font-size: 0.9em; }
-  .box__productos {
-    margin-bottom: 150px; } }
-
-@media screen and (min-width: 600px) {
-  .card-title {
-    font-size: 0.9em; }
-  .card-text {
-    font-size: 0.9em; }
-  .box__productos {
-    margin-bottom: 290px; } }
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1024px) {
   .card-title {
     font-size: 1.2em; }
   .card-text {
+    font-size: 1.2em; } }
+
+@media screen and (max-width: 780px) {
+  .card-title {
+    font-size: 0.9em; }
+  .card-text {
+    font-size: 0.9em; } }
+
+@media screen and (max-width: 600px) {
+  .card-title {
     font-size: 1.2em; }
-  .box__productos {
-    margin-bottom: 350px; } }
+  .card-text {
+    font-size: 1.2em; } }
+
+@media screen and (max-width: 480px) {
+  .card-title {
+    font-size: 1.2em; }
+  .card-text {
+    font-size: 1.2em; } }
 
 @media screen and (max-width: 320px) {
   .card-title {
     font-size: 0.9em; }
   .card-text {
-    font-size: 0.9em; }
-  .box__productos {
-    margin-bottom: 400px; } }
+    font-size: 0.9em; } }
 
 /*HOME*/
-@media screen and (min-width: 1024px) {
-  .card__productos .artesanos__card .artesanos {
+@media screen and (max-width: 1024px) {
+  .box__artesanos .artesanos__card .artesanos {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 0; }
-    .card__productos .artesanos__card .artesanos .artesanos__titulo {
+    .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
       font-size: 2em;
       font-family: "Raleway", sans-serif; }
-    .card__productos .artesanos__card .artesanos .artesanos__parrafo {
+    .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
+      margin-top: 10px;
       font-size: 1.2em;
       font-family: "Raleway", sans-serif; }
-    .card__productos .artesanos__card .artesanos .artesanos__imagen {
+    .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
       width: 50%; } }
 
-@media screen and (min-width: 768px) {
-  .card__productos .box__cardIndex .card-title {
-    font-size: 0.9em; }
-  .card__productos .box__cardIndex .card-text {
-    font-size: 0.7em; }
-  .card__productos .box__cardIndex .card-footer {
-    font-size: 0.7em; } }
+@media screen and (max-width: 768px) {
+  .box__artesanos .artesanos__card {
+    margin-top: 50px; }
+    .box__artesanos .artesanos__card .artesanos {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0; }
+      .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
+        font-size: 2em;
+        font-family: "Raleway", sans-serif; }
+      .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
+        font-size: 1.2em;
+        font-family: "Raleway", sans-serif; }
+      .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
+        width: 50%; } }
 
-@media screen and (min-width: 768px) {
-  .card__productos .artesanos__card .artesanos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0; }
-    .card__productos .artesanos__card .artesanos .artesanos__titulo {
-      font-size: 2em;
-      font-family: "Raleway", sans-serif; }
-    .card__productos .artesanos__card .artesanos .artesanos__parrafo {
-      font-size: 1.2em;
-      font-family: "Raleway", sans-serif; }
-    .card__productos .artesanos__card .artesanos .artesanos__imagen {
-      width: 50%; } }
+@media screen and (max-width: 600px) {
+  .box__artesanos .artesanos__card {
+    margin-top: 50px; }
+    .box__artesanos .artesanos__card .artesanos {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0; }
+      .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
+        font-size: 1.5em;
+        font-family: "Raleway", sans-serif; }
+      .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
+        font-size: 1.2em;
+        font-family: "Raleway", sans-serif; }
+      .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
+        width: 50%; } }
 
-@media screen and (min-width: 600px) {
-  .card__productos .box__cardIndex {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .card__productos .box__cardIndex .card-title {
-      font-size: 0.9em; }
-    .card__productos .box__cardIndex .card-text {
-      font-size: 0.7em; }
-    .card__productos .box__cardIndex .card-footer {
-      font-size: 0.7em; } }
-
-@media screen and (min-width: 600px) {
-  .card__productos .artesanos__card .artesanos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0; }
-    .card__productos .artesanos__card .artesanos .artesanos__titulo {
-      font-size: 2em;
-      font-family: "Raleway", sans-serif; }
-    .card__productos .artesanos__card .artesanos .artesanos__parrafo {
-      font-size: 1.2em;
-      font-family: "Raleway", sans-serif; }
-    .card__productos .artesanos__card .artesanos .artesanos__imagen {
-      width: 50%; } }
-
-@media screen and (min-width: 480px) {
-  .card__productos .box__cardIndex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
-    .card__productos .box__cardIndex .imgContainer {
-      height: 400px;
-      position: relative; }
-  .card-title {
-    font-size: 0.9em; }
-  .card-text {
-    font-size: 0.7em; }
-  .card-footer {
-    font-size: 0.7em; } }
-
-@media screen and (min-width: 480px) {
-  .card__productos .artesanos__card .artesanos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0; }
-    .card__productos .artesanos__card .artesanos .artesanos__titulo {
-      font-size: 2em;
-      font-family: "Raleway", sans-serif; }
-    .card__productos .artesanos__card .artesanos .artesanos__parrafo {
-      font-size: 1.2em;
-      font-family: "Raleway", sans-serif; }
-    .card__productos .artesanos__card .artesanos .artesanos__imagen {
-      width: 50%; } }
+@media screen and (max-width: 480px) {
+  .box__artesanos .artesanos__card {
+    margin-top: 50px; }
+    .box__artesanos .artesanos__card .artesanos {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0; }
+      .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
+        font-size: 1.2em;
+        font-family: "Raleway", sans-serif; }
+      .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
+        font-size: 0.9em;
+        font-family: "Raleway", sans-serif; }
+      .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
+        width: 50%; } }
 
 @media screen and (max-width: 320px) {
-  .artesanos__card .artesanos {
-    display: grid;
-    grid-template-columns: 1fr, 2rf, 1fr;
-    grid-template-rows: 1fr repeat(3, 150px);
-    gap: 10px;
-    padding: 30px; }
-    .artesanos__card .artesanos .artesanos__titulo {
-      grid-column: 1/2;
-      grid-row: 1;
-      font-size: 1.2em;
+  .box__artesanos .artesanos__card .artesanos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+    .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
+      font-size: 1.5em;
       font-family: "Raleway", sans-serif; }
-    .artesanos__card .artesanos .artesanos__parrafo {
-      grid-column: 1/3;
-      grid-row: 2/3;
+    .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
       font-size: 0.9em;
-      font-family: "Raleway", sans-serif; }
-    .artesanos__card .artesanos .artesanos__imagen {
-      grid-column: 1/3;
-      grid-row: 4; } }
+      font-family: "Raleway", sans-serif; } }
 
 /*PRODUCTOS*/
 @media screen and (min-width: 320px) {
   .joyas__link {
+    font-size: 1.2em;
     display: flex;
     flex-direction: row;
     justify-content: center; }
-  .joyas:hover {
-    color: #488888b2; }
-  .joyas--bordes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-bottom: 1px solid #000000;
-    padding: 2px;
-    color: #000000;
-    margin: 10px;
-    font-family: "Ubuntu", sans-serif;
-    font-style: initial;
-    font-size: 1.2em; }
-  .box__productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    .joyas__link .joyas:hover {
+      color: #488888b2; }
+    .joyas__link .joyas__info {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border-bottom: 1px solid #000000;
+      padding: 2px;
+      color: #000000;
+      font-family: "Ubuntu", sans-serif;
+      font-style: initial;
+      font-size: 0.7em; }
   /*Inicio de Sesion y Registrarse*/ }
 
 @media screen and (min-width: 320px) and (max-width: 320px) {
@@ -672,12 +598,14 @@ body {
     .footer .box .footer__box {
       padding: 0px;
       text-decoration: none;
+      border: none;
       color: #000000;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       margin: 10px;
-      width: 100%; } }
+      width: 100%;
+      font-size: 0.9em; } }
 
 @media screen and (max-width: 320px) {
   .footer .footer__preguntas {
