@@ -339,6 +339,17 @@ body {
   .redesSociales__logo .redes__enlace {
     text-decoration: none; }
 
+
+    /*JAVASCRIPT*/
+
+    .ofertaColor{
+      color: #2d6e1d;
+    }
+
+    .precioColor{
+      color: #000000;
+    }
+
 /* MediaQ*/
 /*New In y Productos*/
 @media screen and (max-width: 1024px) {

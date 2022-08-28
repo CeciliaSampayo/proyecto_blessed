@@ -12,6 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/translated.css">
     <title>Blessed Joyas -Productos</title>
@@ -55,6 +56,7 @@
                         <button type="button" class="btn btn-outline-secondary"><a class="botones__barraNavegacion"
                                 href="./registro.html">Registrarse</a></button>
                     </section>
+                    <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
                 </div>
             </nav>
         </section>
@@ -77,7 +79,24 @@
             </article>
         </section>
 
-        <div class="box__index row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
+        
+          
+        
+        <main id="contenedor-productos">
+        </main>
+    
+        <div class="modal-contenedor">
+            <div class="modal-carrito">
+                <h3>Carrito</h3>
+                <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                <div id="carrito-contenedor">
+                </div>
+                <p class="precioProducto">Precio Total: $<span id="precioTotal">0</span></p>
+                <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            </div>
+        </div>
+
+        <!--        <div class="box__index row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
 
             <div class="col estilo">
                 <section class="card w-100 img__container">
@@ -219,38 +238,60 @@
                 </section>
             </div>
 
-    </main>
-
-    <footer class="container">
-
-        <section class="footer">
-            <section class="footer__preguntas">
-                <h4 class="footer__faqs">Ayuda</h4>
-                <p class="footer__faqs">Preguntas Frecuentes</p>
-                <p class="footer__faqs">Segui tu envio</p>
-                <p class="footer__faqs">Medios de pago</p>
-                <p class="footer__faqs">Problemas con mi compra</p>
+            
+           
+            <section class="carritoProductos" id="productosHtml"></section>
+            <section class="carrito">
+                <article>
+                    <div class="carrito__div">
+                        <h2 id="carritoHtml">Su carrito esta vacio</h2>
+                        <img class="carrito__img" src="./assets/carrito.png" alt="" />
+                    </div>
+                    <ul id="comprasHtml"></ul>
+                </article>
+                <h3 id="totalHtml">El total de su compra es de 0</h3>
+                <button class="finish_button" id="finalizar">Finalizar</button>
             </section>
 
-            <div class="box">
-                <a class="footer__box" href="./contacto.html">Contacto</a>
-                <a class="footer__box" href="./redesSociales.html">Redes Sociales</a>
-                <a class="footer__box" href="./ubicacion.html">Ubicacion</a>
-            </div>
-        </section>
-        </section>
+    </main> -->
 
-    </footer>
+        <footer class="container">
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+            <section class="footer">
+                <section class="footer__preguntas">
+                    <h4 class="footer__faqs">Ayuda</h4>
+                    <p class="footer__faqs">Preguntas Frecuentes</p>
+                    <p class="footer__faqs">Segui tu envio</p>
+                    <p class="footer__faqs">Medios de pago</p>
+                    <p class="footer__faqs">Problemas con mi compra</p>
+                </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+
+                <div class="box">
+                    <a class="footer__box" href="./contacto.html">Contacto</a>
+                    <a class="footer__box" href="./redesSociales.html">Redes Sociales</a>
+                    <a class="footer__box" href="./ubicacion.html">Ubicacion</a>
+                </div>
+            </section>
+            </section>
+
+        </footer>
+
+       <script src="./index.js"></script>
+        <script src="./stock.js"></script>
+        <script src="./modal.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+
 
 </body>
+        
 
 </html>
