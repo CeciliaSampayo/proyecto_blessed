@@ -1,3 +1,58 @@
+//API
+
+const mp = new MercadoPago('TEST-34bfc991-9d9d-43a8-a3e7-14eba26e337a');
+const bricksBuilder = mp.bricks();
+const renderPaymentBrick = async (bricksBuilder) => {
+  const settings = {
+    initialization: {
+      amount: 100, // valor del pago a realizar
+    },
+    customization: {
+      paymentMethods: {
+        creditCard: 'all',
+        debitCard: 'all',
+      },
+    },
+    callbacks: {
+      onReady: () => {
+        // callback llamado cuando Brick esté listo
+      },
+      onSubmit: ({ paymentType, formData }) => {
+        // callback llamado cuando el usuario haz clic en el botón enviar los datos
+       
+        if (paymentType === 'credit_card' || paymentType === 'debit_card') {
+          return new Promise((resolve, reject) => {
+            fetch("/processar-pago", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(formData)
+            })
+              .then((response) => {
+                // recibir el resultado del pago
+                resolve();
+              })
+              .catch((error) => {
+                // tratar respuesta de error al intentar crear el pago
+                reject();
+              })
+          });
+        }
+      },
+      onError: (error) => {
+        // callback llamado para todos los casos de error de Brick
+      },
+    },
+  };
+  window.paymentBrickController = await bricksBuilder.create(
+    'payment',
+    'paymentBrick_container',
+    settings
+  );
+ };
+ renderPaymentBrick(bricksBuilder);
+
 const contenedorProductos = document.getElementById(`contenedor-productos`);
 
 const contenedorCarrito = document.getElementById(`carrito-contenedor`);
@@ -18,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });*/
 
+
 botonVaciar.addEventListener("click", () => {
   carrito.length = 0;
   actualizarCarrito();
@@ -27,14 +83,16 @@ stockProductos.forEach((producto) => {
   const div = document.createElement("div");
   div.classList.add(`producto`);
   div.innerHTML = `
+
     <div class="col estilo box__productos">
     <section id="${producto.id}" class="card w-100 box">
      <img src="${producto.img}" class="card-img-top" alt="${producto.nombre}">
      <article class="card-body">
          <h5 class="card-title">${producto.nombre}</h5>
          <p class="card-text">${producto.desc}</p>
+         <p class="card-precio">$${producto.precio}</p>
          <article class="card-footer fs-5">
-         <button id="agregar${producto.id}" class="boton-agregar">Agregar<i class fas-fa-shopping-cart"></button>
+         <button id="agregar${producto.id}" class="btn btn-outline-secondary">Comprar<i class fas-fa-shopping-cart"></button>
          </article>
      </article>
  </section>
