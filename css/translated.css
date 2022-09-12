@@ -5,47 +5,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Koulen&family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap");
+
 /*Misc*/
 /*COLORES*/
 .base {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
 .primary {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
 .secondary {
-  color: #000000ee; }
+  color: #000000ee;
+}
 
 .text-color {
-  color: #000000; }
+  color: #000000;
+}
 
 .text-sections {
-  color: #423f3fc7; }
+  color: #423f3fc7;
+}
 
 .text-submenu {
-  color: #e7e7e7a4; }
+  color: #e7e7e7a4;
+}
 
 .text-textoSecundario {
-  color: #292727; }
+  color: #292727;
+}
 
 .text-hover {
-  color: #488888b2; }
+  color: #488888b2;
+}
 
 .shadow {
-  color: #00000027; }
+  color: #00000027;
+}
 
 /*FONT FAMILY*/
 /*FONT SIZES*/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   background-color: #FFFFFF;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh; }
+  min-height: 100vh;
+}
 
 /*Partials*/
 /*BARRA NAVEGACION*/
@@ -53,61 +65,77 @@ body {
   letter-spacing: 3px;
   font-size: 3.5em;
   font-family: "Raleway", sans-serif;
-  color: #000000ee; }
+  color: #000000ee;
+}
 
 .navbar .container-fluid .button__nav {
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 .navbar .menuNavegacion {
-  margin-right: 95px; }
-  .navbar .menuNavegacion .nav-link {
-    color: #292727;
-    font-family: "Ubuntu", sans-serif; }
+  margin-right: 95px;
+}
+
+.navbar .menuNavegacion .nav-link {
+  color: #292727;
+  font-family: "Ubuntu", sans-serif;
+}
 
 .navbar .botones__barraNavegacion {
   text-decoration: none;
-  color: #000000; }
+  color: #000000;
+}
 
 .navbar .botones__barraNavegacion:hover {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
 .footer .footer__preguntas {
   display: flex;
   flex-direction: column;
   font-family: "Ubuntu", sans-serif;
-  margin: 50px; }
-  .footer .footer__preguntas .footer__faqs {
-    margin: 8px;
-    display: flex;
-    justify-content: center; }
+  margin: 50px;
+}
+
+.footer .footer__preguntas .footer__faqs {
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+}
 
 .footer .box {
   display: flex;
   flex-direction: row;
-  font-family: "Ubuntu", sans-serif; }
-  .footer .box .footer__box {
-    text-decoration: none;
-    color: #000000;
-    padding: 7px;
-    border: 1px solid rgba(65, 58, 58, 0.486);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 10px;
-    width: 100%; }
+  font-family: "Ubuntu", sans-serif;
+}
+
+.footer .box .footer__box {
+  text-decoration: none;
+  color: #000000;
+  padding: 7px;
+  border: 1px solid rgba(65, 58, 58, 0.486);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+  width: 100%;
+}
 
 /*Pages*/
 .contactoTitulo {
   font-family: "Radio Canada", sans-serif;
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .contacto {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.2em;
-  color: #000000; }
+  color: #000000;
+}
 
-.card__productos .titulo__box .titulo__coleccion, .card__productos .titulo__box .titulo__coleccion--active {
+.card__productos .titulo__box .titulo__coleccion,
+.card__productos .titulo__box .titulo__coleccion--active {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -117,9 +145,12 @@ body {
   margin-bottom: 70px;
   margin-top: 50px;
   font-family: "Raleway", sans-serif;
-  font-size: 3.5em; }
-  .card__productos .titulo__box .titulo__coleccion--active {
-    color: #1d396e; }
+  font-size: 3.5em;
+}
+
+.card__productos .titulo__box .titulo__coleccion--active {
+  color: #1d396e;
+}
 
 .card__productos .cardIndex {
   display: flex;
@@ -127,113 +158,144 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0px;
-  margin-top: 15px; }
+  margin-top: 15px;
+}
 
 .box__index {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .card-title {
   font-family: "Ubuntu", sans-serif;
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .card-text {
   font-family: "Ubuntu", sans-serif;
   color: "Fira Sans", sans-serif;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 .card {
-  box-shadow: 5px 5px 5px var(--shadow); }
+  box-shadow: 5px 5px 5px var(--shadow);
+}
 
 .imgContainer {
   height: 400px;
-  position: relative; }
+  position: relative;
+}
 
 .estilo .imgContainer img {
   width: 100%;
   transition: all 25sg;
-  box-shadow: 5px 5px 5px #00000027; }
+  box-shadow: 5px 5px 5px #00000027;
+}
 
 .estilo:hover .imgContainer img {
-  transform: scale(1.06); }
+  transform: scale(1.06);
+}
 
 .box__artesanos .artesanos__card {
-  margin-top: 50px; }
-  .box__artesanos .artesanos__card .artesanos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; }
-    .box__artesanos .artesanos__card .artesanos__titulo {
-      font-size: 3.5em;
-      font-family: "Raleway", sans-serif; }
-    .box__artesanos .artesanos__card .artesanos__parrafo {
-      margin-top: 10px;
-      font-size: 1.5em;
-      font-family: "Raleway", sans-serif; }
-    .box__artesanos .artesanos__card .artesanos__imagen {
-      margin-top: 10px;
-      width: 50%; }
+  margin-top: 50px;
+}
+
+.box__artesanos .artesanos__card .artesanos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box__artesanos .artesanos__card .artesanos__titulo {
+  font-size: 3.5em;
+  font-family: "Raleway", sans-serif;
+}
+
+.box__artesanos .artesanos__card .artesanos__parrafo {
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif;
+}
+
+.box__artesanos .artesanos__card .artesanos__imagen {
+  margin-top: 10px;
+  width: 50%;
+}
 
 .bienvenido {
   font-family: "Raleway", sans-serif;
-  color: #292727; }
+  color: #292727;
+}
 
 .form-label {
   font-family: "Dongle", sans-serif;
   font-size: 1.2em;
-  color: #423f3fc7; }
+  color: #423f3fc7;
+}
 
 .form-check-label {
   font-family: "Dongle", sans-serif;
   font-size: 0.9em;
-  color: #423f3fc7; }
+  color: #423f3fc7;
+}
 
 .registro {
   text-decoration: none;
   font-family: "Dongle", sans-serif;
-  color: #423f3fc7; }
+  color: #423f3fc7;
+}
 
 .form__sexo {
   font-family: "Dongle", sans-serif;
-  color: #423f3fc7; }
+  color: #423f3fc7;
+}
 
 .texto__newIn {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Ubuntu", sans-serif;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 .texto__newIn:hover {
-  color: #488888b2; }
+  color: #488888b2;
+}
 
 .card-title {
   font-family: "Ubuntu", sans-serif;
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .card-title:hover {
-  color: #488888b2; }
+  color: #488888b2;
+}
 
 .card-text {
   font-family: "Ubuntu", sans-serif;
   color: "Fira Sans", sans-serif;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 .card {
-  box-shadow: 5px 5px 5px #00000027; }
+  box-shadow: 5px 5px 5px #00000027;
+}
 
 .estilo .imgContainer img {
   width: 100%;
   transition: all 25sg;
-  box-shadow: 5px 5px 5px #00000027; }
+  box-shadow: 5px 5px 5px #00000027;
+}
 
 .imgContainer {
   height: 400px;
-  position: relative; }
+  position: relative;
+}
 
 .estilo:hover .imgContainer img {
-  transform: scale(1.06); }
+  transform: scale(1.06);
+}
 
 .joyas__box .joyas {
   display: flex;
@@ -242,48 +304,60 @@ body {
   margin: 25px;
   font-size: 3.5em;
   color: #000000;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+}
 
 .joyas__box .joyas:hover {
-  color: #488888b2; }
+  color: #488888b2;
+}
 
 .joyas__box .joyas__link {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
-  .joyas__box .joyas__link .joyas__info {
-    display: inline-flex;
-    flex-direction: row;
-    border-bottom: 1px solid #000000;
-    padding: 10px;
-    color: #000000;
-    margin: 3px;
-    font-family: "Ubuntu", sans-serif;
-    font-style: initial;
-    font-size: 0.9em; }
-  .joyas__box .joyas__link .joyas__info:hover {
-    color: #7979ac;
-    border-bottom: 1px solid #5d5d6d; }
+  justify-content: center;
+}
+
+.joyas__box .joyas__link .joyas__info {
+  display: inline-flex;
+  flex-direction: row;
+  border-bottom: 1px solid #000000;
+  padding: 10px;
+  color: #000000;
+  margin: 3px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: initial;
+  font-size: 0.9em;
+}
+
+.joyas__box .joyas__link .joyas__info:hover {
+  color: #7979ac;
+  border-bottom: 1px solid #5d5d6d;
+}
 
 .card-body .card-title {
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 .card-body .card-text {
   font-family: "Ubuntu", sans-serif;
   color: "Fira Sans", sans-serif;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+}
 
 .card-body .card {
-  box-shadow: 5px 5px 5px var(--shadow); }
+  box-shadow: 5px 5px 5px var(--shadow);
+}
 
 .estilo .img__container img {
   width: 100%;
   transition: all 25sg;
-  box-shadow: 5px 5px 5px #00000027; }
+  box-shadow: 5px 5px 5px #00000027;
+}
 
 .estilo:hover .img__container img {
-  transform: scale(1.06); }
+  transform: scale(1.06);
+}
 
 .texto__sucursales {
   display: flex;
@@ -292,63 +366,112 @@ body {
   margin: 11px;
   font-size: 3.5em;
   color: #000000;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+}
 
 .sucursales {
   display: flex;
   justify-content: center;
-  flex-direction: row; }
-  .sucursales .sucursales__ubicacion {
-    border-bottom: 1px solid #000000;
-    padding: 20px;
-    margin-left: 10px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    font-family: "Ubuntu", sans-serif;
-    font-style: initial; }
+  flex-direction: row;
+}
+
+.sucursales .sucursales__ubicacion {
+  border-bottom: 1px solid #000000;
+  padding: 20px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: initial;
+}
 
 .ubicacion__mapa {
   width: 100%;
-  height: 400px; }
+  height: 400px;
+}
 
 .redesSociales {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
-  .redesSociales .texto__redes {
-    color: #000000;
-    font-family: "Raleway", sans-serif;
-    margin: 10px; }
+  justify-content: center;
+}
+
+.redesSociales .texto__redes {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  margin: 10px;
+}
 
 .redesSociales__logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 50px; }
-  .redesSociales__logo .redes__logo {
-    margin-left: 30px; }
-  .redesSociales__logo .redes__logo1 {
-    margin-left: 37px; }
-  .redesSociales__logo .redes__texto {
-    color: #000000;
-    font-size: 1.5em;
-    font-family: "Ubuntu", sans-serif;
-    margin-right: 40px; }
-  .redesSociales__logo .redes__texto:hover {
-    color: #639c9c; }
-  .redesSociales__logo .redes__enlace {
-    text-decoration: none; }
+  margin-top: 50px;
+}
+
+.redesSociales__logo .redes__logo {
+  margin-left: 30px;
+}
+
+.redesSociales__logo .redes__logo1 {
+  margin-left: 37px;
+}
+
+.redesSociales__logo .redes__texto {
+  color: #000000;
+  font-size: 1.5em;
+  font-family: "Ubuntu", sans-serif;
+  margin-right: 40px;
+}
+
+.redesSociales__logo .redes__texto:hover {
+  color: #639c9c;
+}
+
+.redesSociales__logo .redes__enlace {
+  text-decoration: none;
+}
 
 
-    /*JAVASCRIPT*/
+/*JAVASCRIPT*/
 
-    .ofertaColor{
-      color: #2d6e1d;
-    }
+.ofertaColor {
+  color: #648800;
+  text-shadow: #000000;
+}
 
-    .precioColor{
-      color: #000000;
-    }
+.precioColor {
+  color: #000000;
+}
+
+.boxUsuarios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  color: black;
+}
+
+
+.botonUsuarios {
+  margin-right: 10px;
+}
+
+.registros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+}
+
+.contentCard {
+  margin: 15px;
+  color: #000000;
+  font-size: 18px;
+}
 
 /*PRODUCTOS JAVASCRIPT
 
@@ -389,16 +512,9 @@ body {
 
 
 /*INDEX E-COMMERCE*/
+/*
 
-.box__productos{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 5px;
-}
-
-
-/*.card {
+.card {
   width: 100%;
   margin: 0.5%;
   border: solid 0.7px black;
@@ -445,34 +561,35 @@ body {
 
 
 
-.card{
-display: flex;
-justify-content: center;
-box-shadow: 5px 5px 5px rgba(107, 104, 104, 0.062);
-width: 100%;
-}
-
-.card-body .card-title{
-  font-size: 22px;
- 
-}
-.card-title:hover{
-color:#488888b2 
-}
-
-.card-text{
-font: "Ubuntu", sans-serif;
-}
-
-.card-precio{
+.card {
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  box-shadow: 5px 5px 5px rgba(107, 104, 104, 0.062);
+  width: 100%;
+}
+
+.card-body .card-title {
+  font-size: 22px;
+
+}
+
+.card-title:hover {
+  color: #488888b2
+}
+
+.card-text {
   font: "Ubuntu", sans-serif;
 }
 
-.card-precio:hover{
-  color:#488888b2 
+.card-precio {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif
+}
+
+.card-precio:hover {
+  color: #488888b2
 }
 
 
@@ -481,26 +598,35 @@ font: "Ubuntu", sans-serif;
 #boton-carrito {
   border: none;
   color: #1f1616;
-  font-size: 40px;
+  width: 23px;
+  margin-bottom: 1px;
+  margin-top: 5px;
+  margin-left: 5px;
   background-color: white;
   border-radius: 25%;
   transition: all .3s;
 }
+
 #boton-carrito:hover {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.699);
   background-color: #4888882d;
 }
+
 #boton-carrito:focus {
   outline: none;
 }
 
 #contenedor-productos {
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 60px auto;
   display: flex;
-  justify-content:center;
+  justify-content: space-around;
   flex-wrap: wrap;
+}
+
+#contadorCarrito {
+  margin-left: 2px;
 }
 
 .producto {
@@ -510,6 +636,7 @@ font: "Ubuntu", sans-serif;
   margin-bottom: 20px;
   box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
 }
+
 .precioProducto {
   font-weight: 700;
 }
@@ -550,6 +677,7 @@ font: "Ubuntu", sans-serif;
   color: rgb(0, 0, 0);
   padding-bottom: 5px;
 }
+
 .modal-carrito #carritoCerrar {
   position: absolute;
   top: 15px;
@@ -559,15 +687,18 @@ font: "Ubuntu", sans-serif;
   border: none;
   background-color: white;
 }
+
 .modal-carrito #carritoCerrar:hover {
   cursor: pointer;
 }
+
 .modal-carrito #carritoCerrar:focus {
   outline: none;
 }
+
 .modal-carrito .precioProducto {
   padding-top: 10px;
-  
+
 }
 
 .productoEnCarrito {
@@ -579,6 +710,7 @@ font: "Ubuntu", sans-serif;
   display: flex;
   justify-content: space-between;
 }
+
 .productoEnCarrito:hover {
   border-left: 5px solid rgb(39, 39, 39);
 }
@@ -593,6 +725,7 @@ font: "Ubuntu", sans-serif;
 .boton-eliminar:hover {
   cursor: pointer;
 }
+
 .boton-eliminar:focus {
   outline: none;
 }
@@ -603,33 +736,53 @@ font: "Ubuntu", sans-serif;
 /*New In y Productos*/
 @media screen and (max-width: 1024px) {
   .card-title {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+  }
+
   .card-text {
-    font-size: 1.2em; } }
+    font-size: 1.2em;
+  }
+}
 
 @media screen and (max-width: 780px) {
   .card-title {
-    font-size: 0.9em; }
+    font-size: 0.9em;
+  }
+
   .card-text {
-    font-size: 0.9em; } }
+    font-size: 0.9em;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .card-title {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+  }
+
   .card-text {
-    font-size: 1.2em; } }
+    font-size: 1.2em;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .card-title {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+  }
+
   .card-text {
-    font-size: 1.2em; } }
+    font-size: 1.2em;
+  }
+}
 
 @media screen and (max-width: 320px) {
   .card-title {
-    font-size: 0.9em; }
+    font-size: 0.9em;
+  }
+
   .card-text {
-    font-size: 0.9em; } }
+    font-size: 0.9em;
+  }
+}
 
 /*HOME*/
 @media screen and (max-width: 1024px) {
@@ -639,73 +792,111 @@ font: "Ubuntu", sans-serif;
     flex-direction: column;
     align-items: center;
     margin: 0;
-    padding: 0; }
-    .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
-      font-size: 2em;
-      font-family: "Raleway", sans-serif; }
-    .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
-      margin-top: 10px;
-      font-size: 1.2em;
-      font-family: "Raleway", sans-serif; }
-    .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
-      width: 50%; } }
+    padding: 0;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
+    font-size: 2em;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
+    width: 50%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .box__artesanos .artesanos__card {
-    margin-top: 50px; }
-    .box__artesanos .artesanos__card .artesanos {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
-      padding: 0; }
-      .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
-        font-size: 2em;
-        font-family: "Raleway", sans-serif; }
-      .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
-        font-size: 1.2em;
-        font-family: "Raleway", sans-serif; }
-      .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
-        width: 50%; } }
+    margin-top: 50px;
+  }
+
+  .box__artesanos .artesanos__card .artesanos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
+    font-size: 2em;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
+    font-size: 1.2em;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
+    width: 50%;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .box__artesanos .artesanos__card {
-    margin-top: 50px; }
-    .box__artesanos .artesanos__card .artesanos {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
-      padding: 0; }
-      .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
-        font-size: 1.5em;
-        font-family: "Raleway", sans-serif; }
-      .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
-        font-size: 1.2em;
-        font-family: "Raleway", sans-serif; }
-      .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
-        width: 50%; } }
+    margin-top: 50px;
+  }
+
+  .box__artesanos .artesanos__card .artesanos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
+    font-size: 1.5em;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
+    font-size: 1.2em;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
+    width: 50%;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .box__artesanos .artesanos__card {
-    margin-top: 50px; }
-    .box__artesanos .artesanos__card .artesanos {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      margin: 0;
-      padding: 0; }
-      .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
-        font-size: 1.2em;
-        font-family: "Raleway", sans-serif; }
-      .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
-        font-size: 0.9em;
-        font-family: "Raleway", sans-serif; }
-      .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
-        width: 50%; } }
+    margin-top: 50px;
+  }
+
+  .box__artesanos .artesanos__card .artesanos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
+    font-size: 1.2em;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
+    font-size: 0.9em;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__imagen {
+    width: 50%;
+  }
+}
 
 @media screen and (max-width: 320px) {
   .box__artesanos .artesanos__card .artesanos {
@@ -714,13 +905,19 @@ font: "Ubuntu", sans-serif;
     flex-direction: column;
     align-items: center;
     margin: 0;
-    padding: 0; }
-    .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
-      font-size: 1.5em;
-      font-family: "Raleway", sans-serif; }
-    .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
-      font-size: 0.9em;
-      font-family: "Raleway", sans-serif; } }
+    padding: 0;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__titulo {
+    font-size: 1.5em;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .box__artesanos .artesanos__card .artesanos .artesanos__parrafo {
+    font-size: 0.9em;
+    font-family: "Raleway", sans-serif;
+  }
+}
 
 /*PRODUCTOS*/
 @media screen and (min-width: 320px) {
@@ -728,62 +925,87 @@ font: "Ubuntu", sans-serif;
     font-size: 1.2em;
     display: flex;
     flex-direction: row;
-    justify-content: center; }
-    .joyas__link .joyas:hover {
-      color: #488888b2; }
-    .joyas__link .joyas__info {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      border-bottom: 1px solid #000000;
-      padding: 2px;
-      color: #000000;
-      font-family: "Ubuntu", sans-serif;
-      font-style: initial;
-      font-size: 0.7em; }
-  /*INICIO DE SESION Y REGISTRARSE*/ }
+    justify-content: center;
+  }
+
+  .joyas__link .joyas:hover {
+    color: #488888b2;
+  }
+
+  .joyas__link .joyas__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid #000000;
+    padding: 2px;
+    color: #000000;
+    font-family: "Ubuntu", sans-serif;
+    font-style: initial;
+    font-size: 0.7em;
+  }
+
+  /*INICIO DE SESION Y REGISTRARSE*/
+}
 
 @media screen and (min-width: 320px) and (max-width: 320px) {
   .bienvenido {
     font-family: "Raleway", sans-serif;
     color: #292727;
-    color: #000000; }
+    color: #000000;
+  }
+
   .form-label {
     font-family: "Dongle", sans-serif;
     font-size: 1.2em;
-    color: #423f3fc7; }
+    color: #423f3fc7;
+  }
+
   .form-check-label {
     font-family: "Dongle", sans-serif;
     font-size: 0.9em;
-    color: #423f3fc7; }
+    color: #423f3fc7;
+  }
+
   .registro {
     text-decoration: none;
     font-family: "Dongle", sans-serif;
-    color: #423f3fc7; }
+    color: #423f3fc7;
+  }
+
   .form__sexo {
     font-family: "Dongle", sans-serif;
-    color: #423f3fc7; } }
+    color: #423f3fc7;
+  }
+}
 
 @media screen and (min-width: 320px) {
-  /*REDES SOCIALES*/ }
+  /*REDES SOCIALES*/
+}
 
 @media screen and (min-width: 320px) and (max-width: 320px) {
   .redesSociales {
     display: flex;
     flex-direction: row;
-    justify-content: center; }
-    .redesSociales .texto__redes {
-      color: #000000;
-      font-family: "Raleway", sans-serif;
-      font-size: 1.2em;
-      margin: 10px; }
+    justify-content: center;
+  }
+
+  .redesSociales .texto__redes {
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+    margin: 10px;
+  }
+
   .redes__texto {
     font-family: "Ubuntu", sans-serif;
     font-size: 0.9em;
-    color: #423f3fc7; } }
+    color: #423f3fc7;
+  }
+}
 
 @media screen and (min-width: 320px) {
-  /*UBICACION*/ }
+  /*UBICACION*/
+}
 
 @media screen and (min-width: 320px) and (max-width: 1040px) {
   .texto__ubicacion .texto__sucursales {
@@ -792,16 +1014,22 @@ font: "Ubuntu", sans-serif;
     align-content: center;
     font-size: 2em;
     margin-bottom: 40px;
-    font-family: "Fira Sans", sans-serif; }
+    font-family: "Fira Sans", sans-serif;
+  }
+
   .sucursales {
     display: flex;
     justify-content: center;
-    flex-direction: row; }
-    .sucursales .sucursales__ubicacion {
-      letter-spacing: 2px;
-      font-size: 0.9em;
-      font-family: "Ubuntu", sans-serif;
-      font-style: initial; } }
+    flex-direction: row;
+  }
+
+  .sucursales .sucursales__ubicacion {
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    font-family: "Ubuntu", sans-serif;
+    font-style: initial;
+  }
+}
 
 @media screen and (max-width: 320px) {
   .texto__ubicacion .texto__sucursales {
@@ -810,15 +1038,21 @@ font: "Ubuntu", sans-serif;
     align-content: center;
     font-size: 2em;
     margin-bottom: 40px;
-    font-family: "Fira Sans", sans-serif; }
+    font-family: "Fira Sans", sans-serif;
+  }
+
   .sucursales {
     display: flex;
     justify-content: center;
-    flex-direction: column; }
-    .sucursales .sucursales__ubicacion {
-      font-size: 0.9em;
-      font-family: "Ubuntu", sans-serif;
-      font-style: initial; } }
+    flex-direction: column;
+  }
+
+  .sucursales .sucursales__ubicacion {
+    font-size: 0.9em;
+    font-family: "Ubuntu", sans-serif;
+    font-style: initial;
+  }
+}
 
 /*FOOTER*/
 @media screen and (max-width: 600px) {
@@ -828,23 +1062,31 @@ font: "Ubuntu", sans-serif;
     font-family: "Ubuntu", sans-serif;
     font-size: 0.9em;
     color: #000000;
-    margin: 50px; }
-    .footer .footer__preguntas .footer__faqs {
-      margin: 8px;
-      display: flex;
-      justify-content: center; }
+    margin: 50px;
+  }
+
+  .footer .footer__preguntas .footer__faqs {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+  }
+
   .footer .box {
     display: flex;
     flex-direction: row;
-    font-family: "Ubuntu", sans-serif; }
-    .footer .box .footer__box {
-      text-decoration: none;
-      color: #000000;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin: 10px;
-      width: 100%; } }
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .footer .box .footer__box {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .footer .footer__preguntas {
@@ -853,26 +1095,34 @@ font: "Ubuntu", sans-serif;
     font-family: "Ubuntu", sans-serif;
     font-size: 0.9em;
     color: #000000;
-    margin: 50px; }
-    .footer .footer__preguntas .footer__faqs {
-      margin: 8px;
-      display: flex;
-      justify-content: center; }
+    margin: 50px;
+  }
+
+  .footer .footer__preguntas .footer__faqs {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+  }
+
   .footer .box {
     display: flex;
     flex-direction: row;
-    font-family: "Ubuntu", sans-serif; }
-    .footer .box .footer__box {
-      padding: 0px;
-      text-decoration: none;
-      border: none;
-      color: #000000;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin: 10px;
-      width: 100%;
-      font-size: 0.9em; } }
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .footer .box .footer__box {
+    padding: 0px;
+    text-decoration: none;
+    border: none;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    width: 100%;
+    font-size: 0.9em;
+  }
+}
 
 @media screen and (max-width: 320px) {
   .footer .footer__preguntas {
@@ -881,22 +1131,30 @@ font: "Ubuntu", sans-serif;
     font-family: "Ubuntu", sans-serif;
     font-size: 0.9em;
     color: #000000;
-    margin: 50px; }
-    .footer .footer__preguntas .footer__faqs {
-      margin: 8px;
-      display: flex;
-      justify-content: center; }
+    margin: 50px;
+  }
+
+  .footer .footer__preguntas .footer__faqs {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+  }
+
   .footer .box {
     display: flex;
     flex-direction: row;
-    font-family: "Ubuntu", sans-serif; }
-    .footer .box .footer__box {
-      text-decoration: none;
-      display: flex;
-      border: none;
-      flex-direction: row;
-      justify-content: center;
-      margin: 10px;
-      width: 100%;
-      font-size: 0.7em;
-      color: #000000; } }
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  .footer .box .footer__box {
+    text-decoration: none;
+    display: flex;
+    border: none;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+    font-size: 0.7em;
+    color: #000000;
+  }
+}

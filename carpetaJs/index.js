@@ -65,13 +65,12 @@ const precioTotal = document.getElementById("precioTotal");
 
 let carrito = [];
 
-/*
-document.addEventListener("DOMContentLoaded", () => {
-  if (localStorage.getItem("carrito")) {
-    carrito = JSON.parse(localStorage.getItem("carrito"));
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('carrito')) {
+    carrito = JSON.parse(localStorage.getItem('carrito'));
     actualizarCarrito();
   }
-});*/
+})
 
 
 botonVaciar.addEventListener("click", () => {
@@ -85,12 +84,12 @@ stockProductos.forEach((producto) => {
   div.innerHTML = `
 
     <div class="col estilo box__productos">
-    <section id="${producto.id}" class="card w-100 box">
+    <section id="${producto.id}" class="card w-100 box img__container">
      <img src="${producto.img}" class="card-img-top" alt="${producto.nombre}">
      <article class="card-body">
          <h5 class="card-title">${producto.nombre}</h5>
          <p class="card-text">${producto.desc}</p>
-         <p class="card-precio">$${producto.precio}</p>
+         <p class="card-precio ${producto.precio <= 200000 ? "ofertaColor" : "precioComun"}">$${producto.precio}</p>
          <article class="card-footer fs-5">
          <button id="agregar${producto.id}" class="btn btn-outline-secondary">Comprar<i class fas-fa-shopping-cart"></button>
          </article>
@@ -99,18 +98,17 @@ stockProductos.forEach((producto) => {
 </div>
 </div> `;
 
-  /*`
-    <img src = ${producto.img} alt = "">
-    <h3>${producto.nombre}</h3>
-    <p>${producto.desc}</p>
-    <p class="precioProducto">Precio:$${producto.precio}</p>
-    <button id="agregar${producto.id}" class="boton-agregar">Agregar<i class fas-fa-shopping-cart"></button>
-    `*/
   contenedorProductos.appendChild(div);
 
   const boton = document.getElementById(`agregar${producto.id}`);
   boton.addEventListener("click", () => {
     agregarAlCarrito(producto.id);
+    Swal.fire({
+      title: "Producto agregado",
+      icon: "success",
+      confirmButtonText: "aceptar"
+  
+    })
   });
 });
 
@@ -151,9 +149,12 @@ const actualizarCarrito = () => {
         `;
 
     contenedorCarrito.appendChild(div);
-/*    localStorage.setItem("carrito", JSON.stringify(carrito));*/
+
+   localStorage.setItem('carrito', JSON.stringify(carrito))
   });
   contadorCarrito.innerText = carrito.length;
   
   precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.precio, 0);
 };
+
+

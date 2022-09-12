@@ -24,6 +24,8 @@
     "nodemon": "^2.0.16"
   },
   "dependencies": {
-    "mercadopago": "^1.5.14"
+    "@sweetalert2/theme-dark": "^5.0.12",
+    "mercadopago": "^1.5.14",
+    "sweetalert2": "^11.4.32"
   }
 }
